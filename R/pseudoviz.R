@@ -18,12 +18,26 @@ pseudovizCtypes <- function(){
 }
 
 #' @export
-whichPseudoviz <- function(d){
+whichPseudoviz <- function(x){
+  if("character" %in% class(x)){
+    if(length(x) == 1){
+      ctypes <- strsplit(x,"-")[[1]]
+    }else{
+      ctypes <- x
+    }
+  }
+  if("data.frame" %in% class(x)){
+    ctypes <- guessCtypes(x,named = TRUE)
+  }
+  if(!is.null(names(ctypes))){
+    possible <- possibleNamedCtypes(ctypes)
+  }else{
+    #possible <- possibleCtypes(ctypes, combine = TRUE, castable = TRUE)
+    possible <- possibleCtypes(ctypes, combine = TRUE, castable = FALSE)
+    names(possible) <- map(possible,paste,collapse="|")
+  }
+  
   ct <- pseudovizCtypes()
-  ctypes <- guessCtypes(d,named = TRUE)
-  #possible <- possibleCtypes(ctypes, combine = TRUE, castable = TRUE)
-  #possible <- possibleCtypes(ctypes, combine = TRUE, castable = FALSE)
-  possible <- possibleNamedCtypes(ctypes)
   pids <- map(possible, function(p){
     p <- paste(p,collapse = "-")
     ct %>% filter(ctype %in% p) %>% pull(id)
