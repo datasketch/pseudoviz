@@ -1,21 +1,23 @@
-mergeOptions <- function(opts,defaultOpts){
-  optNames <- names(defaultOpts)
-  o <- list()
-  for(i in optNames){
-    o[[i]] <- opts[[i]] %||% defaultOpts[[i]]
+
+str_tpl_format <- function (tpl, l){
+  if ("list" %in% class(l)) {
+    listToNameValue <- function(l) {
+      mapply(function(i, j) list(name = j, value = i), 
+             l, names(l), SIMPLIFY = FALSE)
+    }
+    f <- function(tpl, l) {
+      gsub(paste0("{", l$name, "}"), l$value, tpl, fixed = TRUE)
+    }
+    return(Reduce(f, listToNameValue(l), init = tpl))
   }
-  o
+  if ("data.frame" %in% class(l)) {
+    myTranspose <- function(x) lapply(1:nrow(x), function(i) lapply(l, 
+                                                                    "[[", i))
+    return(unlist(lapply(myTranspose(l), function(l, tpl) str_tpl_format(tpl, 
+                                                                         l), tpl = tpl)))
+  }
 }
 
-
-sysfile <- function(..., package = "pseudoviz"){
-  if (is.null(package)){
-    path = file.path(...)
-  } else {
-    path = system.file(..., package = package)
-  }
-  path
-}
 
 `%||%` <- function (x, y)
 {
