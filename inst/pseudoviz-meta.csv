@@ -1,137 +1,212 @@
-id,name,group,img_url,data_restrictions,params,comments,ctypes,numid,original_img,img
-pie,Pie Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-002.png,8 cats,"%, #",NA,Cat|Cat-Num,2,Pseudo Viz - 2.png,pseudoviz-002.png
-donut,Donut Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-003.png,8 cats,"%, #",NA,Cat|Cat-Num,3,Pseudo Viz - 3.png,pseudoviz-003.png
-waﬄe,Waﬄe Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-004.png,10 cats - ncolors,"tamaño del cuadro, %# en la leyenda",NA,Cat|Cat-Num,4,Pseudo Viz - 4.png,pseudoviz-004.png
-pyramid,Pyramid,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-005.png,NA,"%, #",NA,Ord|Ord-Num,5,Pseudo Viz - 5.png,pseudoviz-005.png
-funnel,Funnel Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-006.png,NA,"%, #",NA,Ord|Ord-Num,6,Pseudo Viz - 6.png,pseudoviz-006.png
-bullseye,Bullseye,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-007.png,NA,"%, #",NA,Cat|Cat-Num,7,Pseudo Viz - 7.png,pseudoviz-007.png
-gauge,Gauge Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-008.png,NA,"1 num,  min-max",múltiples agujas,Num,8,Pseudo Viz - 8.png,pseudoviz-008.png
-dial,Dial Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-009.png,NA,"1 num,  min-max",stacked bar,Num,9,Pseudo Viz - 9.png,pseudoviz-009.png
-marimekko,Marimekko,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-010.png,NA,NA,intercambiar cats?,Cat-Cat|Cat-Cat-Num,10,Pseudo Viz - 10.png,pseudoviz-010.png
-treemap,Treemap,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-011.png,NA,NA,multinivel HieP|multinivel CatP,Cat|Cat-Num,11,Pseudo Viz - 11.png,pseudoviz-011.png
-treemap_bivariate,Bivariate Treemap,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-012.png,NA,NA,HieP-Num|HiePCat,Cat-Cat|Cat-Cat-Num|Cat-Num-Num,12,Pseudo Viz - 12.png,pseudoviz-012.png
-partition,Partition Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-013.png,NA,NA,NA,HieP|HieP-Num,13,Pseudo Viz - 13.png,pseudoviz-013.png
-bar_ver,Vertical Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-015.png,NA,NA,NA,Cat|Cat-Num,15,Pseudo Viz - 15.png,pseudoviz-015.png
-bar_hor,Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-016.png,NA,NA,NA,Cat|Cat-Num,16,Pseudo Viz - 16.png,pseudoviz-016.png
-bar_ver_tgt,Vertical Bar Chart with Target Line,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-017.png,NA,"target for each cat, estadística cualquiera",NA,Cat|Cat-Num,17,Pseudo Viz - 17.png,pseudoviz-017.png
-bar_hot_tgt,Horizontal Bar Chart With Target Line,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-018.png,NA,"target for each cat, estadística cualquiera",NA,Cat|Cat-Num,18,Pseudo Viz - 18.png,pseudoviz-018.png
-bar_ver_stk,Stacked Vertical Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-019.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,19,Pseudo Viz - 19.png,pseudoviz-019.png
-bar_ver_stk_nrm,Vertical Stacked Normalized Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-020.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,20,Pseudo Viz - 20.png,pseudoviz-020.png
-bar_hor_stk,Stacked Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-021.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,21,Pseudo Viz - 21.png,pseudoviz-021.png
-bar_hor_stk_nrm,Horizontal Stacked Normalized Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-022.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,22,Pseudo Viz - 22.png,pseudoviz-022.png
-bar_ver_grp,Grouped Bar Chart Vertical,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-023.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,23,Pseudo Viz - 23.png,pseudoviz-023.png
-bar_hor_grp,Grouped Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-024.png,NA,NA,Cat-Cat-Cat-Num - stk grp,Cat-Cat|Cat-Cat-Num,24,Pseudo Viz - 24.png,pseudoviz-024.png
-bar_ver_grp_clr,Vertical Bar Chart Group Color,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-025.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,25,Pseudo Viz - 25.png,pseudoviz-025.png
-bar_hor_grp_clr,Horizontal Bar Chart Group Color,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-026.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,26,Pseudo Viz - 26.png,pseudoviz-026.png
-bar_ver_clr,Coloured Bar Chart Vertical,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-027.png,NA,NA,dibujar escala color cont,Cat-Num-Num,27,Pseudo Viz - 27.png,pseudoviz-027.png
-bar_hor_clr,Coloured Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-028.png,NA,NA,NA,Cat-Num-Num,28,Pseudo Viz - 28.png,pseudoviz-028.png
-bar_hor_2sides,2 Sided Bars,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-029.png,NA,NA,NA,Cat-Bin-Num,29,Pseudo Viz - 29.png,pseudoviz-029.png
-watterfall,Waterfall Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-030.png,NA,NA,"velas, ohlc range",Ord-Num,30,Pseudo Viz - 30.png,pseudoviz-030.png
-bullet_grp,Grouped Bullet Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-031.png,"5 values - low, medium, high, target, actual",NA,NA,Cat-Num,31,Pseudo Viz - 31.png,pseudoviz-031.png
-bullet,Bullet Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-032.png,"5 values - low, medium, high, target, actual",target value,NA,Num,32,Pseudo Viz - 32.png,pseudoviz-032.png
-bar_3d,3D bars,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-033.png,NA,NA,otra de color|Cat-Cat-Cat-Num,Cat-Cat-Num,33,Pseudo Viz - 33.png,pseudoviz-033.png
-line,Line Chart,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-035.png,NA,NA,NA,Ord-Num|Ord-Ord|Num-Num,35,Pseudo Viz - 35.png,pseudoviz-035.png
-line_dot_err,Dot Line Chart With Error Bars,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-036.png,NA,Tipo del eje Y debe ser el mismo del Min y Max,Num si se da el tamaño de la ventana de muestras,Ord-Ord-Ord-Ord|Num-Ord-Ord-Ord|Num-Num-Num-Num|Ord-Num|Num,36,Pseudo Viz - 36.png,pseudoviz-036.png
-line_mlt,Multi Line Chart,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-037.png,NA,NA,NA,NumP|Cat-Num|Ord-NumP|Ord-OrdP|Num-NumP|Ord-OrdP,37,Pseudo Viz - 37.png,pseudoviz-037.png
-line_2yaxis,Two y axis lines,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-038.png,NA,NA,NA,Num_Num|Ord_Ord|Bin-Num|Ord-Num-Num|Ord-Ord-Ord|Ord-Num-Ord|Ord-Ord-Num,38,Pseudo Viz - 38.png,pseudoviz-038.png
-line_ribbon,Ribbon Plot,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-039.png,NA,if Num-Num param,"if Num-Num-Num x,y and range up-down",Num-Num-Num-Num||Num-Num-Num|Num-Num|Num,39,Pseudo Viz - 39.png,pseudoviz-039.png
-slope,Slope Graph,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-040.png,"x,y,colores",NA,NA,Bin-Ord-Cat,40,Pseudo Viz - 40.png,pseudoviz-040.png
-parallelcoords,Parallel Coords,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-041.png,NA,NA,NA,Cat-OrdP|OrdP,41,Pseudo Viz - 41.png,pseudoviz-041.png
-area,Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-043.png,NA,NA,NA,Ord-Num|Ord-Ord|Num-Num,43,Pseudo Viz - 43.png,pseudoviz-043.png
-area_stk,Stacked Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-044.png,NA,NA,NA,Cat-Ord-Num|Cat-Ord-Ord|Cat-Num-Num|Cat-Ord|Cat-Num,44,Pseudo Viz - 44.png,pseudoviz-044.png
-area_stk_nrm,Normalized Stacked Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-045.png,NA,NA,NA,Cat-Ord-Num|Cat-Ord-Ord|Cat-Num-Num|Cat-Ord|Cat-Num,45,Pseudo Viz - 45.png,pseudoviz-045.png
-area_diﬀ,Diﬀ Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-046.png,NA,Ord-Ord deben tener el mismo dominio,NA,Bin-Ord|Bin-Num|Bin-Ord-Ord|Bin-Num-Ord|Ord-Ord|Num-Num|Ord-Ord-Ord|Num-Num-Ord|,46,Pseudo Viz - 46.png,pseudoviz-046.png
-area_diﬀ_vertical,Diﬀerence Areas Vertical,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-047.png,NA,NA,NA,Bin-Ord|Bin-Num|Bin-Ord-Ord|Bin-Num-Ord|Ord-Ord|Num-Num|Ord-Ord-Ord|Num-Num-Ord|,47,Pseudo Viz - 47.png,pseudoviz-047.png
-area_blocks,Area Blocks,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-048.png,NA,NA,NA,Ord-Ord|Num-Num,48,Pseudo Viz - 48.png,pseudoviz-048.png
-area_stp,Stepped Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-049.png,NA,NA,NA,Ord|Ord-Ord,49,Pseudo Viz - 49.png,pseudoviz-049.png
-area_stp_stk,Stepped Stacked Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-050.png,NA,NA,NA,Ord-Cat|Ord-Ord|Ord-Ord-Ord|Ord-Ord-Cat,50,Pseudo Viz - 50.png,pseudoviz-050.png
-area_stp_stk_nrm,Stepped Stacked Normalized Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-051.png,NA,NA,NA,Ord-Cat|Ord-Ord|Ord-Ord-Ord|Ord-Ord-Cat,51,Pseudo Viz - 51.png,pseudoviz-051.png
-area_depth,Depth Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-052.png,NA,NA,NA,Ord-Ord-Ord|Ord-Ord-Ord-Cat|Ord-Ord,52,Pseudo Viz - 52.png,pseudoviz-052.png
-horizon,Horizon Graph,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-053.png,NA,NA,NA,Ord-Num|Ord-Ord|Num-Num,53,Pseudo Viz - 53.png,pseudoviz-053.png
-horizon_grp,Grouped Horizon Graph,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-054.png,NA,NA,NA,Ord-Num|Ord-Ord|Num-Num|Ord-Num-Ord|Ord-Ord-Ord|Num-Num-Ord,54,Pseudo Viz - 54.png,pseudoviz-054.png
-stream,Stream Graph,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-055.png,NA,NA,NA,Ord-Cat|Ord-Ord|Ord-Ord-Ord|Ord-Ord-Cat,55,Pseudo Viz - 55.png,pseudoviz-055.png
-lollipop,Lollipop Chart,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-057.png,NA,NA,NA,Cat|Cat-Num,57,Pseudo Viz - 57.png,pseudoviz-057.png
-lollipop_hor,Lollipop Chart Horizontal,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-058.png,NA,NA,NA,Cat|Cat-Num,58,Pseudo Viz - 58.png,pseudoviz-058.png
-lollipop_grp,Grouped Lollipop Chart,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-059.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,59,Pseudo Viz - 59.png,pseudoviz-059.png
-lollipop_hor_grp,Grouped Lollipop Chart Horizontal,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-060.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,60,Pseudo Viz - 60.png,pseudoviz-060.png
-lollipop_rng,Lollipop Range Chart Vertical,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-061.png,NA,NA,NA,Num-Num,61,Pseudo Viz - 61.png,pseudoviz-061.png
-lollipop_hor_rng,Lollipop Diﬀ Char,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-062.png,NA,NA,NA,Num-Num,62,Pseudo Viz - 62.png,pseudoviz-062.png
-choropleth_cat,Choropleth Categoric,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-064.png,NA,NA,NA,Gcd-Cat|Gcd-Cat-Num,64,Pseudo Viz - 64.png,pseudoviz-064.png
-choropleth_num,Choropleth Numeric,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-065.png,NA,NA,dibujar escala color cont,Gcd-Num|Gnm-Num,65,Pseudo Viz - 65.png,pseudoviz-065.png
-choropleth_bivariate,Bivariate Choropleth,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-066.png,NA,NA,NA,Gcd-Num-Num|Gnm-Num-Num,66,Pseudo Viz - 66.png,pseudoviz-066.png
-geo_heatmap,Geo Heatmap,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-067.png,NA,NA,NA,Gcd-Num|Gnm-Num,67,Pseudo Viz - 67.png,pseudoviz-067.png
-geo_squares_num,Squares Map Numeric,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-068.png,NA,NA,NA,NA,68,Pseudo Viz - 68.png,pseudoviz-068.png
-geo_squares_cat,Squares Map Categoric,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-069.png,NA,NA,NA,NA,69,Pseudo Viz - 69.png,pseudoviz-069.png
-geo_hexbin,Hexbin Map,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-070.png,NA,NA,NA,NA,70,Pseudo Viz - 70.png,pseudoviz-070.png
-geo_cartogram_inflated,Cartografía,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-071.png,NA,NA,NA,Gcd-Num,71,Pseudo Viz - 71.png,pseudoviz-071.png
-geo_arcs,Arcs Map,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-072.png,NA,NA,NA,Gcd-Gcd,72,Pseudo Viz - 72.png,pseudoviz-072.png
-geo_bubbles,Bubble Map,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-073.png,NA,Colors in bubbles,NA,Gcd-Num|Gcd-Cat|Gcd-Cat-Num,73,Pseudo Viz - 73.png,pseudoviz-073.png
-geo_3d_triangles,Map triangles,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-074.png,NA,NA,NA,NA,74,Pseudo Viz - 74.png,pseudoviz-074.png
-geo_3d_bars,3D bar maps,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-075.png,NA,NA,NA,NA,75,Pseudo Viz - 75.png,pseudoviz-075.png
-geo_inclination_lines,Map lines inclined,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-076.png,NA,NA,NA,NA,76,Pseudo Viz - 76.png,pseudoviz-076.png
-venn,Venn Diagram,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-078.png,NA,NA,NA,NA,78,Pseudo Viz - 78.png,pseudoviz-078.png
-bubble,Bubble chart,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-079.png,NA,NA,NA,Num-Num-Num|Cat-Num-Num-Num,79,Pseudo Viz - 79.png,pseudoviz-079.png
-bubble_pack,Bubbles,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-080.png,NA,NA,NA,Cat|Cat-Num,80,Pseudo Viz - 80.png,pseudoviz-080.png
-bubble_pack_grp,Grouped Bubbles,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-081.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,81,Pseudo Viz - 81.png,pseudoviz-081.png
-circle_pack,Circle Pack Tree,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-082.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,82,Pseudo Viz - 82.png,pseudoviz-082.png
-net,Network,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-084.png,hasta cuando se puede dar una relación,NA,NA,Cat-Cat,84,Pseudo Viz - 84.png,pseudoviz-084.png
-net_linearcs,Arc Diagram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-085.png,NA,NA,NA,Cat-Cat,85,Pseudo Viz - 85.png,pseudoviz-085.png
-net_linearcs2,Network Arc 2,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-086.png,NA,NA,NA,NA,86,Pseudo Viz - 86.png,pseudoviz-086.png
-net_ring,Network Rings,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-087.png,NA,NA,NA,Cat-Cat,87,Pseudo Viz - 87.png,pseudoviz-087.png
-net_circle,Network Circle,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-088.png,NA,NA,NA,Cat-Cat,88,Pseudo Viz - 88.png,pseudoviz-088.png
-net_chord,Chord Diagram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-089.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,89,Pseudo Viz - 89.png,pseudoviz-089.png
-net_chord_split,Chord Diagram Partition,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-090.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,90,Pseudo Viz - 90.png,pseudoviz-090.png
-sankey,Sankey Diagram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-091.png,NA,NA,NA,NA,91,Pseudo Viz - 91.png,pseudoviz-091.png
-hive,Hive Plot,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-092.png,NA,NA,NA,NA,92,Pseudo Viz - 92.png,pseudoviz-092.png
-dendogram_ver,Dendogram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-093.png,NA,NA,NA,HieP,93,Pseudo Viz - 93.png,pseudoviz-093.png
-dendogram_hor,Dendogram Horizontal,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-094.png,NA,NA,NA,HieP,94,Pseudo Viz - 94.png,pseudoviz-094.png
-subway,Subway,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-095.png,NA,NA,NA,NA,95,Pseudo Viz - 95.png,pseudoviz-095.png
-net_tree_hor,Network Tree,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-096.png,NA,NA,NA,NA,96,Pseudo Viz - 96.png,pseudoviz-096.png
-net_tree_ver,Network Tree Vertical,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-097.png,NA,NA,NA,NA,97,Pseudo Viz - 97.png,pseudoviz-097.png
-radar,Radar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-099.png,NA,NA,NA,Cat|Cat-Num,99,Pseudo Viz - 99.png,pseudoviz-099.png
-radar_grp,Grouped Radar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-100.png,NA,NA,NA,Cat-Cat-Num|Cat-Cat,100,Pseudo Viz - 100.png,pseudoviz-100.png
-radial_bars,Radial Bar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-101.png,NA,NA,NA,Cat|Cat-Num,101,Pseudo Viz - 101.png,pseudoviz-101.png
-circular_bar,Circular Bar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-102.png,NA,NA,NA,Cat|Cat-Num,102,Pseudo Viz - 102.png,pseudoviz-102.png
-circular_bar_stk,Stacked Circular Bar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-103.png,NA,NA,NA,Cat|Cat-Num,103,Pseudo Viz - 103.png,pseudoviz-103.png
-circular_bar_stk_nrm,Normalized Stacked Circular Bar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-104.png,NA,NA,NA,Cat|Cat-Num,104,Pseudo Viz - 104.png,pseudoviz-104.png
-sunburst,Sunburst,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-105.png,NA,NA,NA,HieP-Num|HiePCat,105,Pseudo Viz - 105.png,pseudoviz-105.png
-scatter,Scatter plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-107.png,NA,NA,NA,Num|Num-Num,107,Pseudo Viz - 107.png,pseudoviz-107.png
-scatter_diﬀ,Scatter Diﬀ Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-108.png,NA,NA,NA,NA,108,Pseudo Viz - 108.png,pseudoviz-108.png
-scatter_grp,Grouped Scatter Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-109.png,NA,NA,NA,Cat-Num|Cat-Num-Num,109,Pseudo Viz - 109.png,pseudoviz-109.png
-scatter_trend,Scatter Trend Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-110.png,NA,NA,NA,NA,110,Pseudo Viz - 110.png,pseudoviz-110.png
-scatter_3d,3D Scatter Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-111.png,NA,NA,NA,Num-Num-Num,111,Pseudo Viz - 111.png,pseudoviz-111.png
-scatter_3d_grp,3D Grouped Scatter Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-112.png,NA,NA,NA,Cat-Num-Num-Num,112,Pseudo Viz - 112.png,pseudoviz-112.png
-histogram,Histogram,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-114.png,NA,NA,NA,Num,114,Pseudo Viz - 114.png,pseudoviz-114.png
-boxplot_ver,Box Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-115.png,NA,NA,NA,Num|Cat|Cat-Num,115,Pseudo Viz - 115.png,pseudoviz-115.png
-boxplot_hor,Box Plot Horizontal,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-116.png,NA,NA,NA,Num|Cat|Cat-Num,116,Pseudo Viz - 116.png,pseudoviz-116.png
-violin_ver,Violin Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-117.png,NA,NA,NA,Num|Cat|Cat-Num,117,Pseudo Viz - 117.png,pseudoviz-117.png
-violin_hor,Horizontal Violin Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-118.png,NA,NA,NA,Num|Cat|Cat-Num,118,Pseudo Viz - 118.png,pseudoviz-118.png
-density,Density plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-119.png,NA,NA,NA,Num,119,Pseudo Viz - 119.png,pseudoviz-119.png
-density_grp,Density plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-120.png,NA,NA,NA,Cat-Num,120,Pseudo Viz - 120.png,pseudoviz-120.png
-qqplot,QQ Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-121.png,NA,NA,NA,Num,121,Pseudo Viz - 121.png,pseudoviz-121.png
-density_hexbin,Hexbin Density,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-122.png,NA,NA,NA,NA,122,Pseudo Viz - 122.png,pseudoviz-122.png
-pairsplot,Pairs Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-123.png,NA,NA,NA,NA,123,Pseudo Viz - 123.png,pseudoviz-123.png
-histogram_3d,3D Histogram,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-124.png,NA,NA,NA,Num,124,Pseudo Viz - 124.png,pseudoviz-124.png
-correlation_heatmap,Correlation Plot Heatmap,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-125.png,NA,NA,NA,Num-Num,125,Pseudo Viz - 125.png,pseudoviz-125.png
-correlation_circles,Correlation Plot Circles,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-126.png,NA,NA,NA,Num-Num,126,Pseudo Viz - 126.png,pseudoviz-126.png
-correlation_heatmap_pyramid,Correlation Heatmap Pyramid,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-127.png,NA,NA,NA,NA,127,Pseudo Viz - 127.png,pseudoviz-127.png
-correlation_circles_pyramid,Correlation Circles Pyramid,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-128.png,NA,NA,NA,NA,128,Pseudo Viz - 128.png,pseudoviz-128.png
-wordtree,Word Tree,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-130.png,NA,NA,NA,Cat-Cat|CatP,130,Pseudo Viz - 130.png,pseudoviz-130.png
-wordcloud,Word Cloud,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-131.png,NA,NA,NA,Cat|Cat-Num,131,Pseudo Viz - 131.png,pseudoviz-131.png
-heatmap_calendar,Calendar Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-133.png,NA,NA,NA,Dat-Cat-Num,133,Pseudo Viz - 133.png,pseudoviz-133.png
-heatmap_grid_num,Grid Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-134.png,NA,NA,dibujar escala color cont,Cat-Cat-Num|Cat-Num,134,Pseudo Viz - 134.png,pseudoviz-134.png
-heatmap_grid_cat,Grid Heatmap Categoric,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-135.png,NA,NA,NA,Cat-Cat-Cat|OrdP,135,Pseudo Viz - 135.png,pseudoviz-135.png
-heatmap_dayhour,Hour Day Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-136.png,NA,NA,NA,NA,136,Pseudo Viz - 136.png,pseudoviz-136.png
-heatmap_matrix,Matrix View Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-137.png,NA,NA,NA,NA,137,Pseudo Viz - 137.png,pseudoviz-137.png
-heatmap_dot_matrix,Dot Matrix,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-138.png,NA,NA,NA,NA,138,Pseudo Viz - 138.png,pseudoviz-138.png
-contour,Contour Lines,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-139.png,NA,NA,NA,NA,139,Pseudo Viz - 139.png,pseudoviz-139.png
-bump,Bump Chart,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-141.png,NA,NA,NA,NA,141,Pseudo Viz - 141.png,pseudoviz-141.png
-timeline,Timeline,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-142.png,NA,NA,NA,NA,142,Pseudo Viz - 142.png,pseudoviz-142.png
-timeline_ver,Timeline Vertical,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-143.png,NA,NA,NA,NA,143,Pseudo Viz - 143.png,pseudoviz-143.png
-gannt,Gannt,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-144.png,NA,NA,NA,NA,144,Pseudo Viz - 144.png,pseudoviz-144.png
-quiver,Quiver Plot,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-146.png,NA,NA,NA,NA,146,Pseudo Viz - 146.png,pseudoviz-146.png
-spark,Spark Line,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-147.png,NA,NA,NA,NA,147,Pseudo Viz - 147.png,pseudoviz-147.png
-ternary,Ternary Plot,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-148.png,NA,NA,NA,NA,148,Pseudo Viz - 148.png,pseudoviz-148.png
-alluvial,Alluvial,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-149.png,NA,NA,NA,NA,149,Pseudo Viz - 149.png,pseudoviz-149.png
-rollercoaster,Rollercoaster Chart,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-150.png,NA,NA,NA,NA,150,Pseudo Viz - 150.png,pseudoviz-150.png
-surface_3d,3D Surface,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pseudoviz-151.png,NA,NA,NA,NA,151,Pseudo Viz - 151.png,pseudoviz-151.png
+id,name,group,img_url,data_restrictions,params,comments,ctypes,img
+area_blocks,Area Blocks,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_blocks.png,NA,NA,NA,Ord-Ord|Num-Num,area_blocks.png
+area,Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area.png,NA,NA,NA,Ord-Num|Ord-Ord|Num-Num,area.png
+area_depth,Depth Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_depth.png,NA,NA,NA,Ord-Ord-Ord|Ord-Ord-Ord-Cat|Ord-Ord,area_depth.png
+area_diﬀ,Diﬀ Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_diﬀ.png,NA,Ord-Ord deben tener el mismo dominio,NA,Bin-Ord|Bin-Num|Bin-Ord-Ord|Bin-Num-Ord|Ord-Ord|Num-Num|Ord-Ord-Ord|Num-Num-Ord|,area_diﬀ.png
+area_diﬀ_vertical,Diﬀerence Areas Vertical,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_diﬀ_vertical.png,NA,Ord-Ord deben tener el mismo dominio,NA,Bin-Ord|Bin-Num|Bin-Ord-Ord|Bin-Num-Ord|Ord-Ord|Num-Num|Ord-Ord-Ord|Num-Num-Ord|,area_diﬀ_vertical.png
+horizon_grp,Grouped Horizon Graph,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/horizon_grp.png,NA,NA,NA,Ord-Num|Ord-Ord|Num-Num|Ord-Num-Ord|Ord-Ord-Ord|Num-Num-Ord,horizon_grp.png
+horizon,Horizon Graph,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/horizon.png,NA,NA,NA,Ord-Num|Ord-Ord|Num-Num,horizon.png
+area_stk_nrm,Normalized Stacked Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_stk_nrm.png,NA,NA,NA,Cat-Ord-Num|Cat-Ord-Ord|Cat-Num-Num|Cat-Ord|Cat-Num,area_stk_nrm.png
+area_range,Range Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_range.png,NA,NA,NA,NA,area_range.png
+area_stk,Stacked Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_stk.png,NA,NA,NA,Cat-Ord-Num|Cat-Ord-Ord|Cat-Num-Num|Cat-Ord|Cat-Num,area_stk.png
+area_stp,Stepped Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_stp.png,NA,NA,NA,Ord|Ord-Ord,area_stp.png
+area_stp_stk,Stepped Stacked Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_stp_stk.png,NA,NA,NA,Ord-Cat|Ord-Ord|Ord-Ord-Ord|Ord-Ord-Cat,area_stp_stk.png
+area_stp_stk_nrm,Stepped Stacked Normalized Area Chart,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/area_stp_stk_nrm.png,NA,NA,NA,Ord-Cat|Ord-Ord|Ord-Ord-Ord|Ord-Ord-Cat,area_stp_stk_nrm.png
+stream,Stream Graph,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/stream.png,NA,NA,NA,Ord-Cat|Ord-Ord|Ord-Ord-Ord|Ord-Ord-Cat,stream.png
+stream_ver,Vertical Stream Graph,Areas,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/stream_ver.png,NA,NA,NA,Ord-Cat|Ord-Ord|Ord-Ord-Ord|Ord-Ord-Cat,stream_ver.png
+bar_hor_2sides,2 Sided Bars,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_2sides.png,NA,NA,NA,Cat-Bin-Num,bar_hor_2sides.png
+bar_hor_2sides_target,2 Sided Bars Target,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_2sides_target.png,NA,NA,NA,Cat-Bin-Num,bar_hor_2sides_target.png
+bar_3d,3D bars,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_3d.png,NA,NA,otra de color|Cat-Cat-Cat-Num,Cat-Cat-Num,bar_3d.png
+bullet,Bullet Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bullet.png,"5 values - low, medium, high, target, actual",target value,NA,Num,bullet.png
+bar_ver_clr,Coloured Bar Chart Vertical,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver_clr.png,NA,NA,dibujar escala color cont,Cat-Num-Num,bar_ver_clr.png
+bar_hor_clr,Coloured Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_clr.png,NA,NA,NA,Cat-Num-Num,bar_hor_clr.png
+bar_ver_grp,Grouped Bar Chart Vertical,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver_grp.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,bar_ver_grp.png
+bullet_grp,Grouped Bullet Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bullet_grp.png,"5 values - low, medium, high, target, actual",NA,NA,Cat-Num,bullet_grp.png
+bar_hor_grp,Grouped Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_grp.png,NA,NA,Cat-Cat-Cat-Num - stk grp,Cat-Cat|Cat-Cat-Num,bar_hor_grp.png
+bar_hor,Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor.png,NA,NA,NA,Cat|Cat-Num,bar_hor.png
+bar_hor_grp_clr,Horizontal Bar Chart Group Color,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_grp_clr.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,bar_hor_grp_clr.png
+bar_hot_tgt,Horizontal Bar Chart With Target Line,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hot_tgt.png,NA,"target for each cat, estadística cualquiera",NA,Cat|Cat-Num,bar_hot_tgt.png
+bar_hor_stk_nrm,Horizontal Stacked Normalized Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_stk_nrm.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,bar_hor_stk_nrm.png
+bar_hor_sort,Sorted Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_sort.png,NA,NA,NA,Cat|Cat-Num,bar_hor_sort.png
+bar_ver_sort,Sorted Vertical Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver_sort.png,NA,NA,NA,Cat|Cat-Num,bar_ver_sort.png
+bar_hor_spine,Spine Horizontal Bars,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_spine.png,NA,NA,NA,NA,bar_hor_spine.png
+bar_ver_spine,Spine Vertical Bars,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver_spine.png,NA,NA,NA,NA,bar_ver_spine.png
+bar_hor_stk,Stacked Horizontal Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_hor_stk.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,bar_hor_stk.png
+bar_ver_stk,Stacked Vertical Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver_stk.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,bar_ver_stk.png
+bar_ver,Vertical Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver.png,NA,NA,NA,Cat|Cat-Num,bar_ver.png
+bar_ver_grp_clr,Vertical Bar Chart Group Color,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver_grp_clr.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,bar_ver_grp_clr.png
+bar_ver_tgt,Vertical Bar Chart with Target Line,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver_tgt.png,NA,"target for each cat, estadística cualquiera",NA,Cat|Cat-Num,bar_ver_tgt.png
+bar_ver_stk_nrm,Vertical Stacked Normalized Bar Chart,Bars,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_ver_stk_nrm.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,bar_ver_stk_nrm.png
+bubble,Bubble chart,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bubble.png,NA,NA,NA,Num-Num-Num|Cat-Num-Num-Num,bubble.png
+bubble_matrix,Bubble Matrix,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bubble_matrix.png,NA,NA,NA,NA,bubble_matrix.png
+bubble_pack,Bubbles,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bubble_pack.png,NA,NA,NA,Cat|Cat-Num,bubble_pack.png
+circle_pack,Circle Pack Tree,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/circle_pack.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,circle_pack.png
+bubble_pack_grp,Grouped Bubbles,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bubble_pack_grp.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,bubble_pack_grp.png
+bubble_matrix_half,Half Bubble Matrix,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bubble_matrix_half.png,NA,NA,NA,NA,bubble_matrix_half.png
+venn,Venn Diagram,Bubbles,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/venn.png,NA,NA,NA,NA,venn.png
+heatmap_calendar,Calendar Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/heatmap_calendar.png,NA,NA,NA,Dat-Cat-Num,heatmap_calendar.png
+circular_heatmap,Circular heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/circular_heatmap.png,NA,NA,NA,NA,circular_heatmap.png
+heatmap_dot_matrix,Dot Matrix Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/heatmap_dot_matrix.png,NA,NA,NA,NA,heatmap_dot_matrix.png
+heatmap_grid_num,Grid Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/heatmap_grid_num.png,NA,NA,NA,Cat-Cat-Num|Cat-Num,heatmap_grid_num.png
+heatmap_grid_cat,Grid Heatmap Categoric,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/heatmap_grid_cat.png,NA,NA,NA,Cat-Cat-Cat|OrdP,heatmap_grid_cat.png
+heatmap_dayhour,Hour Day Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/heatmap_dayhour.png,NA,NA,NA,NA,heatmap_dayhour.png
+heatmap_matrix,Matrix View Heatmap,Heatmap,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/heatmap_matrix.png,NA,NA,NA,NA,heatmap_matrix.png
+candle,Candle Stick Chart,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/candle.png,NA,NA,NA,NA,candle.png
+dot_bar,Dot bars,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/dot_bar.png,NA,NA,NA,NA,dot_bar.png
+line_dot_err,Dot Line Chart With Error Bars,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line_dot_err.png,NA,NA,NA,Ord-Ord-Ord-Ord|Num-Ord-Ord-Ord|Num-Num-Num-Num|Ord-Num|Num,line_dot_err.png
+fan,Fan Chart,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/fan.png,NA,NA,NA,NA,fan.png
+line,Line Chart,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line.png,NA,NA,NA,Ord-Num|Ord-Ord|Num-Num,line.png
+line_radial,Line Radial,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line_radial.png,NA,NA,NA,NA,line_radial.png
+line_radial_grouped,Line Radial Grouped,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line_radial_grouped.png,NA,NA,NA,NA,line_radial_grouped.png
+lines_segments,Line segments,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/lines_segments.png,NA,NA,NA,NA,lines_segments.png
+line_mlt,Multi Line Chart,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line_mlt.png,NA,NA,NA,NumP|Cat-Num|Ord-NumP|Ord-OrdP|Num-NumP|Ord-OrdP,line_mlt.png
+line_multi_grp,Multiline Grouped,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line_multi_grp.png,NA,NA,NA,NA,line_multi_grp.png
+parallelcoords,Parallel Coords,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/parallelcoords.png,NA,NA,NA,Cat-OrdP|OrdP,parallelcoords.png
+parallelcoords_ver,Parallel Coords Vertical,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/parallelcoords_ver.png,NA,NA,NA,Cat-OrdP|OrdP,parallelcoords_ver.png
+line_percentile,Percentile lines,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line_percentile.png,NA,NA,NA,NA,line_percentile.png
+line_ribbon,Ribbon Plot,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line_ribbon.png,NA,NA,NA,Num-Num-Num-Num||Num-Num-Num|Num-Num|Num,line_ribbon.png
+slope,Slope Graph,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/slope.png,"x,y,colores",NA,NA,Bin-Ord-Cat,slope.png
+slope_grp,Slope Graph Grouped,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/slope_grp.png,NA,NA,NA,NA,slope_grp.png
+line_2yaxis,Two y axis lines,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/line_2yaxis.png,NA,NA,NA,Num_Num|Ord_Ord|Bin-Num|Ord-Num-Num|Ord-Ord-Ord|Ord-Num-Ord|Ord-Ord-Num,line_2yaxis.png
+watterfall,Waterfall Chart,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/watterfall.png,NA,NA,NA,NA,watterfall.png
+wheat,Wheat plot,Lines,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/wheat.png,NA,NA,NA,NA,wheat.png
+geo_3d_bars,3D bar maps,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_3d_bars.png,NA,NA,NA,NA,geo_3d_bars.png
+geo_arcs,Arcs Map,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_arcs.png,NA,NA,NA,NA,geo_arcs.png
+choropleth_bivariate,Bivariate Choropleth,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/choropleth_bivariate.png,NA,NA,NA,Gcd-Num-Num|Gnm-Num-Num,choropleth_bivariate.png
+geo_bubbles,Bubble Map,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_bubbles.png,NA,NA,NA,NA,geo_bubbles.png
+geo_cartogram_inflated,Cartografía,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_cartogram_inflated.png,NA,NA,NA,NA,geo_cartogram_inflated.png
+choropleth_cat,Choropleth Categoric,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/choropleth_cat.png,NA,NA,NA,Gcd-Cat|Gcd-Cat-Num,choropleth_cat.png
+choropleth_num,Choropleth Numeric,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/choropleth_num.png,NA,NA,NA,Gcd-Num|Gnm-Num,choropleth_num.png
+geo_cartogram_circle,Circle Cartogram,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_cartogram_circle.png,NA,NA,NA,NA,geo_cartogram_circle.png
+geo_cartogram_diamond,Diamond Cartogram,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_cartogram_diamond.png,NA,NA,NA,Gcd-Num|Gnm-Num,geo_cartogram_diamond.png
+geo_flow,Flow map,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_flow.png,NA,NA,NA,NA,geo_flow.png
+geo_heatmap,Geo Heatmap,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_heatmap.png,NA,NA,NA,Gcd-Num|Gnm-Num,geo_heatmap.png
+geo_cartogram_hexbin,Hexbin Cartogram,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_cartogram_hexbin.png,NA,NA,NA,Gcd-Num|Gnm-Num,geo_cartogram_hexbin.png
+geo_hexbin,Hexbin Map,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_hexbin.png,NA,NA,NA,NA,geo_hexbin.png
+geo_isoline,Isoline map,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_isoline.png,NA,NA,NA,NA,geo_isoline.png
+geo_inclination_lines,Map lines inclined,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_inclination_lines.png,NA,NA,NA,NA,geo_inclination_lines.png
+geo_point_diﬀ,Map point diﬀ,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_point_diﬀ.png,NA,NA,NA,NA,geo_point_diﬀ.png
+geo_radar,Map radar,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_radar.png,NA,NA,NA,NA,geo_radar.png
+geo_3d_triangles,Map triangles,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_3d_triangles.png,NA,NA,NA,NA,geo_3d_triangles.png
+geo_squares_cat,Squares Map Categoric,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_squares_cat.png,NA,NA,NA,Gcd-Cat|Gcd-Cat-Num,geo_squares_cat.png
+geo_squares_num,Squares Map Numeric,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_squares_num.png,NA,NA,NA,Gcd-Num|Gnm-Num,geo_squares_num.png
+geo_cartogram_waﬄe_grid,Waﬄe Grid Cartogram,Maps,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/geo_cartogram_waﬄe_grid.png,NA,NA,NA,NA,geo_cartogram_waﬄe_grid.png
+bar_line_hor,Bar Line Horizontal,Mashups,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_line_hor.png,NA,NA,NA,NA,bar_line_hor.png
+bar_line_ver,Bar Line Vertical,Mashups,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bar_line_ver.png,NA,NA,NA,NA,bar_line_ver.png
+box_violin,Box + Violin Plot,Mashups,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/box_violin.png,NA,NA,NA,NA,box_violin.png
+choropleth_donut,Choropleth + Donut,Mashups,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/choropleth_donut.png,NA,NA,NA,NA,choropleth_donut.png
+heatmap_dendogram,Heatmap + Dendogram,Mashups,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/heatmap_dendogram.png,NA,NA,NA,NA,heatmap_dendogram.png
+histogram_2d_marginals,Marginal Histogram 2D,Mashups,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/histogram_2d_marginals.png,NA,NA,NA,NA,histogram_2d_marginals.png
+multiples_area,Multiples Area,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_area.png,NA,NA,NA,NA,multiples_area.png
+multiples_area_grp,Multiples Area Grouped,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_area_grp.png,NA,NA,NA,NA,multiples_area_grp.png
+multiples_bivariate_bars_hor,Multiples Bivariate Horizontal Bars,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_bivariate_bars_hor.png,NA,NA,NA,NA,multiples_bivariate_bars_hor.png
+multiples_bivariate_lines,Multiples bivariate lines,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_bivariate_lines.png,NA,NA,NA,NA,multiples_bivariate_lines.png
+multiples_bivariate_bars_ver,Multiples Bivariate Vertical Bars,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_bivariate_bars_ver.png,NA,NA,NA,NA,multiples_bivariate_bars_ver.png
+multiples_choropleth_cat,Multiples Choropleth Categoric,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_choropleth_cat.png,NA,NA,NA,NA,multiples_choropleth_cat.png
+multiples_choropleth_num,Multiples Chroropleth Numeric,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_choropleth_num.png,NA,NA,NA,NA,multiples_choropleth_num.png
+multiples_density_grp,Multiples Density Grouped,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_density_grp.png,NA,NA,NA,NA,multiples_density_grp.png
+multiples_geo_density,Multiples Geo Density,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_geo_density.png,NA,NA,NA,NA,multiples_geo_density.png
+multiples_geo_density_grp,Multiples Geo Density Grouped,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_geo_density_grp.png,NA,NA,NA,NA,multiples_geo_density_grp.png
+multiples_geo_bars_hor,Multiples Geo Horizontal Bars,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_geo_bars_hor.png,NA,NA,NA,NA,multiples_geo_bars_hor.png
+multiples_geo_lines,Multiples Geo Lines,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_geo_lines.png,NA,NA,NA,NA,multiples_geo_lines.png
+multiples_geo_bars_ver,Multiples Geo Vertical Bars,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_geo_bars_ver.png,NA,NA,NA,NA,multiples_geo_bars_ver.png
+multiples_line,Multiples Line,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_line.png,NA,NA,NA,NA,multiples_line.png
+multiples_geo_bubbles,Multiples Map Bubbles,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_geo_bubbles.png,NA,NA,NA,NA,multiples_geo_bubbles.png
+multiples_multiline,Multiples MultiLine,Multiples,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/multiples_multiline.png,NA,NA,NA,NA,multiples_multiline.png
+net_linearcs,Arc Diagram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_linearcs.png,NA,NA,NA,Cat-Cat,net_linearcs.png
+net_chord,Chord Diagram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_chord.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,net_chord.png
+net_chord_split,Chord Diagram Partition,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_chord_split.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,net_chord_split.png
+dendogram_ver,Dendogram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/dendogram_ver.png,NA,NA,NA,HieP,dendogram_ver.png
+dendogram_hor,Dendogram Horizontal,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/dendogram_hor.png,NA,NA,NA,HieP,dendogram_hor.png
+hive,Hive Plot,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/hive.png,NA,NA,NA,NA,hive.png
+loom,Loom graph,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/loom.png,NA,NA,NA,NA,loom.png
+sankey_loop,Looped Sankey Diagram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/sankey_loop.png,NA,NA,NA,NA,sankey_loop.png
+net,Network,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net.png,hasta cuando se puede dar una relación,NA,NA,Cat-Cat,net.png
+net_linearcs_2_sided,Network Arc 2 Sided,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_linearcs_2_sided.png,NA,NA,NA,NA,net_linearcs_2_sided.png
+net_circle,Network Circle,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_circle.png,NA,NA,NA,Cat-Cat,net_circle.png
+net_multigraph,Network Multigraph,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_multigraph.png,NA,NA,NA,Cat-Cat,net_multigraph.png
+net_ring,Network Rings,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_ring.png,NA,NA,NA,Cat-Cat,net_ring.png
+net_tree_hor,Network Tree,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_tree_hor.png,NA,NA,NA,NA,net_tree_hor.png
+net_tree_ver,Network Tree Vertical,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/net_tree_ver.png,NA,NA,NA,NA,net_tree_ver.png
+sankey_2_sides,Sankey 2 Sides Diagram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/sankey_2_sides.png,NA,NA,NA,NA,sankey_2_sides.png
+sankey,Sankey Diagram,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/sankey.png,NA,NA,NA,NA,sankey.png
+subway,Subway,Networks,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/subway.png,NA,NA,NA,NA,subway.png
+surface_3d,3D Surface,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/surface_3d.png,NA,NA,NA,NA,surface_3d.png
+alluvial,Alluvial,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/alluvial.png,NA,NA,NA,NA,alluvial.png
+contour,Contour Lines,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/contour.png,NA,NA,NA,NA,contour.png
+cartesian_opposite,Opposite Cartesian Diagram,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/cartesian_opposite.png,NA,NA,NA,NA,cartesian_opposite.png
+symbol_prop_sort,Ordered Proportional symbol,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/symbol_prop_sort.png,NA,NA,NA,NA,symbol_prop_sort.png
+quiver,Quiver Plot,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/quiver.png,NA,NA,NA,NA,quiver.png
+rollercoaster,Rollercoaster Chart,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/rollercoaster.png,NA,NA,NA,NA,rollercoaster.png
+spark,Spark Line,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/spark.png,NA,NA,NA,NA,spark.png
+spiral,Spiral Chart,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/spiral.png,NA,NA,NA,NA,spiral.png
+symbol_pct,Symbol Percentage,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/symbol_pct.png,NA,NA,NA,NA,symbol_pct.png
+ternary,Ternary Plot,Other,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/ternary.png,NA,NA,NA,NA,ternary.png
+lollipop_grp,Grouped Lollipop Chart,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/lollipop_grp.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,lollipop_grp.png
+lollipop_hor_grp,Grouped Lollipop Chart Horizontal,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/lollipop_hor_grp.png,NA,NA,NA,Cat-Cat|Cat-Cat-Num,lollipop_hor_grp.png
+lollipop,Lollipop Chart,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/lollipop.png,NA,NA,NA,Cat|Cat-Num,lollipop.png
+lollipop_hor,Lollipop Chart Horizontal,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/lollipop_hor.png,NA,NA,NA,Cat|Cat-Num,lollipop_hor.png
+lollipop_hor_rng,Lollipop Diﬀ Char,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/lollipop_hor_rng.png,NA,NA,NA,Num-Num,lollipop_hor_rng.png
+lollipop_rng,Lollipop Range Chart Vertical,Pie Chart,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/lollipop_rng.png,NA,NA,NA,Num-Num,lollipop_rng.png
+circular_bar,Circular Bar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/circular_bar.png,NA,NA,NA,Cat|Cat-Num,circular_bar.png
+radar_grp,Grouped Radar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/radar_grp.png,NA,NA,NA,Cat-Cat-Num|Cat-Cat,radar_grp.png
+circular_bar_stk_nrm,Normalized Stacked Circular Bar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/circular_bar_stk_nrm.png,NA,NA,NA,Cat|Cat-Num,circular_bar_stk_nrm.png
+radar,Radar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/radar.png,NA,NA,NA,Cat|Cat-Num,radar.png
+radial_bars,Radial Bar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/radial_bars.png,NA,NA,NA,Cat|Cat-Num,radial_bars.png
+circular_bar_stk,Stacked Circular Bar Chart,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/circular_bar_stk.png,NA,NA,NA,Cat|Cat-Num,circular_bar_stk.png
+sunburst,Sunburst,Polar,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/sunburst.png,NA,NA,NA,HieP-Num|HiePCat,sunburst.png
+treemap_bivariate,Bivariate Treemap,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/treemap_bivariate.png,NA,NA,HieP-Num|HiePCat,Cat-Cat|Cat-Cat-Num|Cat-Num-Num,treemap_bivariate.png
+bullseye,Bullseye,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bullseye.png,NA,"%, #",NA,Cat|Cat-Num,bullseye.png
+circular_loop,Circular Loop Diagram,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/circular_loop.png,NA,NA,NA,NA,circular_loop.png
+dial,Dial Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/dial.png,NA,"1 num,  min-max",stacked bar,Num,dial.png
+dial_stk,Dial Chart Stacked,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/dial_stk.png,NA,NA,NA,NA,dial_stk.png
+donut,Donut Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/donut.png,8 cats,"%, #",NA,Cat|Cat-Num,donut.png
+funnel,Funnel Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/funnel.png,NA,"%, #",NA,Ord|Ord-Num,funnel.png
+gauge,Gauge Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/gauge.png,NA,"1 num,  min-max",múltiples agujas,Num,gauge.png
+marimekko,Marimekko,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/marimekko.png,NA,NA,intercambiar cats?,Cat-Cat|Cat-Cat-Num,marimekko.png
+donut_multilevel,Multilevel Donut Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/donut_multilevel.png,NA,NA,NA,NA,donut_multilevel.png
+partition,Partition Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/partition.png,NA,NA,NA,HieP|HieP-Num,partition.png
+pie,Pie Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pie.png,8 cats,"%, #",NA,Cat|Cat-Num,pie.png
+prop_circles,Proportional Circles,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/prop_circles.png,NA,NA,NA,NA,prop_circles.png
+pyramid,Pyramid,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pyramid.png,NA,"%, #",NA,Ord|Ord-Num,pyramid.png
+treemap,Treemap,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/treemap.png,NA,NA,multinivel HieP|multinivel CatP,Cat|Cat-Num,treemap.png
+waﬄe,Waﬄe Chart,Proportions,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/waﬄe.png,10 cats - ncolors,"tamaño del cuadro, %# en la leyenda",NA,Cat|Cat-Num,waﬄe.png
+scatter_3d_grp,3D Grouped Scatter Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/scatter_3d_grp.png,NA,NA,NA,Cat-Num-Num-Num,scatter_3d_grp.png
+scatter_3d,3D Scatter Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/scatter_3d.png,NA,NA,NA,Num-Num-Num,scatter_3d.png
+scatter_grp,Grouped Scatter Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/scatter_grp.png,NA,NA,NA,Cat-Num|Cat-Num-Num,scatter_grp.png
+scatter_diﬀ,Scatter Diﬀ Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/scatter_diﬀ.png,NA,NA,NA,NA,scatter_diﬀ.png
+scatter,Scatter plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/scatter.png,NA,NA,NA,Num|Num-Num,scatter.png
+scatter_trend,Scatter Trend Plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/scatter_trend.png,NA,NA,NA,Num|Num-Num,scatter_trend.png
+scatter_updown,Scatter up down plot,Scatter,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/scatter_updown.png,NA,NA,NA,NA,scatter_updown.png
+histogram_3d,3D Histogram,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/histogram_3d.png,NA,NA,NA,Num-Num,histogram_3d.png
+barcode,Barcode,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/barcode.png,NA,NA,NA,NA,barcode.png
+barcode_grp,Barcode grp,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/barcode_grp.png,NA,NA,NA,NA,barcode_grp.png
+beeswarm_hor,Beeswarm Horizontal Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/beeswarm_hor.png,NA,NA,NA,Num|Cat|Cat-Num,beeswarm_hor.png
+beeswarm_ver,Beeswarm Vertical Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/beeswarm_ver.png,NA,NA,NA,Num|Cat|Cat-Num,beeswarm_ver.png
+boxplot_ver,Box Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/boxplot_ver.png,NA,NA,NA,Num|Cat|Cat-Num,boxplot_ver.png
+boxplot_hor,Box Plot Horizontal,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/boxplot_hor.png,NA,NA,NA,Num|Cat|Cat-Num,boxplot_hor.png
+correlation_heatmap_pyramid,Correlation Heatmap Pyramid,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/correlation_heatmap_pyramid.png,NA,NA,NA,NA,correlation_heatmap_pyramid.png
+correlation_circles,Correlation Plot Circles,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/correlation_circles.png,NA,NA,NA,NA,correlation_circles.png
+Cumdist,Cumulative Distribution,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/Cumdist.png,NA,NA,NA,NA,Cumdist.png
+density,Density plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/density.png,NA,NA,NA,Num,density.png
+density_grp,Density plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/density_grp.png,NA,NA,NA,Cat-Num,density_grp.png
+density_hexbin,Hexbin Density,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/density_hexbin.png,NA,NA,NA,Num-Num,density_hexbin.png
+histogram,Histogram,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/histogram.png,NA,NA,NA,Num,histogram.png
+violin_hor,Horizontal Violin Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/violin_hor.png,NA,NA,NA,Num|Cat|Cat-Num,violin_hor.png
+joy,Joy Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/joy.png,NA,NA,NA,NA,joy.png
+pairsplot,Pairs Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/pairsplot.png,NA,NA,NA,NA,pairsplot.png
+qqplot,QQ Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/qqplot.png,NA,NA,NA,Num,qqplot.png
+histogram_radial,Radial histogram,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/histogram_radial.png,NA,NA,NA,NA,histogram_radial.png
+scatterplotmatrix,Scatter Plot Matrix,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/scatterplotmatrix.png,NA,NA,NA,NA,scatterplotmatrix.png
+table_sparkline,Table with Sparklines,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/table_sparkline.png,NA,NA,NA,NA,table_sparkline.png
+violin_ver,Violin Plot,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/violin_ver.png,NA,NA,NA,Num|Cat|Cat-Num,violin_ver.png
+wordcloud,Word Cloud,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/wordcloud.png,NA,NA,NA,Cat|Cat-Num,wordcloud.png
+wordtree,Word Tree,Stats,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/wordtree.png,NA,NA,NA,Cat-Cat|CatP,wordtree.png
+bump,Bump Chart,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/bump.png,NA,NA,NA,NA,bump.png
+gannt,Gannt,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/gannt.png,NA,NA,NA,NA,gannt.png
+timeline_grp,Grouped Timeline,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/timeline_grp.png,NA,NA,NA,NA,timeline_grp.png
+jump,Jump Plot,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/jump.png,NA,NA,NA,NA,jump.png
+lexis,Lexis Diagram,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/lexis.png,NA,NA,NA,NA,lexis.png
+timeline,Timeline,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/timeline.png,NA,NA,NA,NA,timeline.png
+timeline_cat,Timeline categories,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/timeline_cat.png,NA,NA,NA,NA,timeline_cat.png
+timeline_ver,Timeline Vertical,Time flows,https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/timeline_ver.png,NA,NA,NA,NA,timeline_ver.png
