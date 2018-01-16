@@ -35,8 +35,9 @@ library(googlesheets)
 s <- gs_url("https://docs.google.com/spreadsheets/d/1KGOHJ7isodE8c6DilX4z-BpA-SrU9DSiREAIOBGMeKA/edit#gid=0")
 meta_manual <- gs_read_csv(s) %>% select(-thumbnail)
 
-vars <- c("id","img_url","data_restrictions","params","comments","ctypes")
+vars <- c("id","img_url","thumbnail_url","data_restrictions","params","comments","ctypes")
 github_raw_img <- "https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/imgs/"
+github_raw_thumbnail_img <- "https://raw.githubusercontent.com/jpmarindiaz/pseudoviz/master/inst/thumbnails/"
 
 # Fix anti join
 
@@ -50,6 +51,7 @@ anti2
 
 meta <- meta_manual %>% 
   mutate(img_url = paste0(github_raw_img,img)) %>% 
+  mutate(thumbnail_url = paste0(github_raw_thumbnail_img,img)) %>% 
   select(one_of(vars)) %>% 
   left_join(meta_pdf) %>% 
   select(id = id, name, group, everything()) %>% 
@@ -64,11 +66,11 @@ lapply(limgs,function(i){
   #i <- limgs[[1]]
   img <- load.image(paste0("inst/drawings/", i$original_img))
   #plot(img)
-  im <- imsub(img, y < height(img)*0.75)
-  im <- resize(im,600,450)
+  im0 <- imsub(img, y < height(img)*0.75)
+  im <- resize(im0,600,450)
   output_file <- paste0("inst/imgs/", i$img)
   save.image(im, output_file)
-  im <- resize(im,100,75)
+  im <- resize(im0,200,150)
   output_file <- paste0("inst/thumbnails/", i$img)
   save.image(im, output_file)
 })
@@ -97,6 +99,7 @@ lapply(limgs,function(i){
 meta <- meta %>% 
   select(-original_img, -numid)
 mop::copy_clipboard(meta)
+jsonlite::write_json(meta,"inst/pseudoviz-meta.json")
 write_csv(meta,"inst/pseudoviz-meta.csv")  
 
 # Create ctypes
