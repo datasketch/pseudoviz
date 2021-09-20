@@ -22,3 +22,6 @@ vignettes/*.pdf
 
 #*.Rproj
 .Rproj.user
+
+.env
+

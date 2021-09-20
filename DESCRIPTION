@@ -1,13 +1,28 @@
 Package: pseudoviz
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.1
-Author: Juan Pablo Marin Diaz
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Juan Pablo",
+           family = "Marin Diaz",
+           role = c("aut", "cre"),
+           email = "jpmarindiaz@gmail.com")
 Maintainer: Juan Pablo Marin Diaz <jpmarindiaz@gmail.com>
-Description: Pseudovisualizations
-Depends:
-    R (>= 3.0.0),
-    homodatum,
-    htmltools
-License: MIT
+Description: Create a hugo site from airtable.
+URL: https://github.com/datasketch/homodatum
+License: MIT + file LICENSE
+Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+BugReports: https://github.com/datasketch/atblcms/issues
+Depends:
+    R (>= 3.1)
+Imports: 
+    tidyverse
+Suggests:
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown,
+    hgchmagic,
+    ggmagic
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1

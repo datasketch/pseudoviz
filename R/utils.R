@@ -36,6 +36,20 @@ is.empty <- function(x){
   !as.logical(length(x))
 }
 
+extract_between_underscore <- function (s){
+  pattern <- paste0("(?<=", "_", ").*?(?=", "_", ")")
+  stringr::str_extract(s, pattern)
+}
+
+
+format_frtype <- function(x){
+  # extract last word
+  x <- word(x,-1, sep = "_")
+  # split every three
+  x <- gsub("(.{3})", "\\1 ", x)
+  x <- gsub(" $","", x)
+  gsub(" ","-", x)
+}
 
 file_path_sans_ext <- function (x)
 {
