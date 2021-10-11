@@ -2,8 +2,6 @@ test_that("Viz recommender", {
   
   library(homodatum)
   
-  # 
-  
   # Data frame in
   x <- iris %>% dplyr::select(Species, Sepal.Length)
   families_df <- viz_which(x)
@@ -20,6 +18,8 @@ test_that("Viz recommender", {
   expect_equal(families2, families)
   
   viz_which_family(x)
+  viz_which_family(f)
+  
   
   # Viz recommender funs
   
@@ -29,6 +29,8 @@ test_that("Viz recommender", {
   
   funs <- viz_fun("hgchmagic", family = "pie", frtype = "Cat")
   expect_equal(funs, "hgch_pie_Cat")
+  funs <- viz_fun("hgchmagic", family = "pie", frtype = "Cat-Num")
+  expect_equal(funs, "hgch_pie_CatNum")
   funs <- viz_fun("hgchmagic", family = "pie", frtype = "Cat", with_package = T)
   expect_equal(funs, "hgchmagic::hgch_pie_Cat")
   

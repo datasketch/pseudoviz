@@ -2,6 +2,8 @@
 
 export(viz_available)
 export(viz_frtypes)
+export(viz_fun)
+export(viz_fun_df)
 export(viz_meta)
 export(viz_which)
 export(viz_which_family)
