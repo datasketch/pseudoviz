@@ -20,6 +20,11 @@ test_that("Viz recommender", {
   viz_which_family(x)
   viz_which_family(f)
   
+  package <- "hgchmagic"
+  viz_which_fun(x, package)
+  vw <- viz_which_fun(x, package, family = c("pie","bar"))
+  expect_equal(vw, c("hgch_bar_CatNum","hgch_pie_CatNum"))
+  
   
   # Viz recommender funs
   
@@ -36,5 +41,7 @@ test_that("Viz recommender", {
   
   funs <- viz_fun("hgchmagic", family = "xxx", with_package = T)
   expect_null(funs)
+  
+  
   
 })

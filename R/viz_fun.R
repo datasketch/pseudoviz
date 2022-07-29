@@ -25,11 +25,11 @@ viz_fun <- function(package, family = NULL, frtype = NULL,
   df <- viz_fun_df(package)
   if(!is.null(family)){
     family_filter <- family
-    df <- df %>% filter(family == family_filter)
+    df <- df %>% filter(family %in% family_filter)
   }
   if(!is.null(frtype)){
     frtype_filter <- frtype
-    df <- df %>% filter(frtype == frtype_filter)
+    df <- df %>% filter(frtype %in% frtype_filter)
   }
   if(nrow(df) == 0) return()
   fun <- df$viz_fun
