@@ -9,6 +9,9 @@ test_that("Viz recommender", {
   x <- sample_data("Cat-Num") 
   families <- viz_which(x)
   
+  families_area_donut <- viz_which(x, family = c("area", "donut")) 
+  expect_true(all(c("area", "donut") %in% unique(families_area_donut$family)))
+  
   expect_equal(families, families_df)
   expect_true("bar" %in% families$family)
   

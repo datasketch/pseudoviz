@@ -12,7 +12,7 @@ viz_which_family <- function(x){
 }
 
 #' @export
-viz_which <- function(x){
+viz_which <- function(x, family = NULL){
   # if("character" %in% class(x)){
   #   if(length(x) == 1){
   #     ctypes <- strsplit(x,"-")[[1]]
@@ -45,7 +45,15 @@ viz_which <- function(x){
   # }) 
   # pids %>% keep(~length(.) > 0)
   
+  if(!is.null(family)){
+    family_filter <- family
+    types <- types |> 
+      dplyr::filter(family %in% family_filter)
+  }
+  
   types
+  
+  
 }
 
 
