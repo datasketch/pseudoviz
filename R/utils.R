@@ -1,40 +1,17 @@
 
-str_tpl_format <- function (tpl, l){
-  if ("list" %in% class(l)) {
-    listToNameValue <- function(l) {
-      mapply(function(i, j) list(name = j, value = i), 
-             l, names(l), SIMPLIFY = FALSE)
-    }
-    f <- function(tpl, l) {
-      gsub(paste0("{", l$name, "}"), l$value, tpl, fixed = TRUE)
-    }
-    return(Reduce(f, listToNameValue(l), init = tpl))
+
+#' @export
+hdtable_type_guess <- function(x){
+  if("data.frame" %in% class(x)){
+    hdtable_type_guess <- hdtable::guess_hdtable_type(x, as_string = TRUE)
   }
-  if ("data.frame" %in% class(l)) {
-    myTranspose <- function(x) lapply(1:nrow(x), function(i) lapply(l, 
-                                                                    "[[", i))
-    return(unlist(lapply(myTranspose(l), function(l, tpl) str_tpl_format(tpl, 
-                                                                         l), tpl = tpl)))
+  if(hdtable::is_hdtable(x)){
+    hdtable_type_guess <- hdtable::hdtable_hdtable_type(x)
   }
+  hdtable_type_guess
 }
 
 
-`%||%` <- function (x, y)
-{
-  if (is.empty(x))
-    return(y)
-  else if (is.null(x) || is.na(x))
-    return(y)
-  else if( class(x)=="character" && nchar(x)==0 )
-    return(y)
-  else x
-}
-
-
-is.empty <- function(x){
-  #   !is.null(x)
-  !as.logical(length(x))
-}
 
 extract_between_underscore <- function (s){
   pattern <- paste0("(?<=", "_", ").*?(?=", "_", ")")
@@ -42,9 +19,9 @@ extract_between_underscore <- function (s){
 }
 
 
-format_frtype <- function(x){
+format_hdtable_type <- function(x){
   # extract last word
-  x <- word(x,-1, sep = "_")
+  x <- stringr::word(x,-1, sep = "_")
   # split every three
   x <- gsub("(.{3})", "\\1 ", x)
   x <- gsub(" $","", x)

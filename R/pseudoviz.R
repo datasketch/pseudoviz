@@ -1,18 +1,13 @@
 
 #' @export
-viz_meta <- function(){
-  pseudoviz::pseudoviz_info
+pseudoviz_meta <- function(){
+  pseudoviz:::pseudoviz_info
 }
 
 #' @export
-viz_available <- function(){
-  meta <- pseudovizMeta()
-  meta$id
-}
-
-#' @export
-viz_frtypes <- function(){
-  pseudoviz:::pseudoviz_frtype
+pseudoviz_available <- function(){
+  meta <- pseudoviz:::pseudoviz_meta()
+  meta$uid
 }
 
 #' #' @export
