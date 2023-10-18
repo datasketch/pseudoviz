@@ -3,6 +3,9 @@ test_that("combine vars work", {
  
   dic <- data.frame(id = c("first"),
                     hdtype = c("Num"))
+  
+  make_combinations(dic$id, 1, colname = "id_")
+  
   combine_vars(dic)
    
   dic <- data.frame(id = c("first", "second"),

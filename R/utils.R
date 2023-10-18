@@ -40,17 +40,6 @@ file_ext <- function (x)
 }
 
 
-make_combinations <- function(v, m = 1, colname = NULL){
-  combs <- combn(1:length(v),m)
-  idx <- as.vector(combs)
-  idx <- purrr::map_chr(idx, ~ v[.])
-  t(matrix(idx, nrow = m)) |>
-    tibble::as_tibble() |>
-    dplyr::rename_with(.fn = ~ paste0(colname, .x)) |>
-    dplyr::mutate(comb_idx = paste0("m",m,"_", dplyr::row_number()))
-}
-
-
 
 
 

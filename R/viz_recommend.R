@@ -37,7 +37,7 @@ viz_recommend <- function(d = NULL, dic = NULL, package = "ggmagic"){
           tibble::tibble(id = id, hdtype = hdtype) |> 
             dplyr::arrange(hdtype) |> 
             dplyr::filter(!is.na(hdtype)) |> 
-            pull(id)
+            dplyr::pull(id)
         })
 
       vizfamily <- package_vizfun_family(package, hdtable_type = ft)

@@ -11,8 +11,8 @@ Create a hugo site from airtable.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/datasketch/homodatum}
-  \item Report bugs at \url{https://github.com/datasketch/atblcms/issues}
+  \item \url{https://github.com/datasketch/pseudoviz}
+  \item Report bugs at \url{https://github.com/datasketch/pseudoviz/issues}
 }
 
 }
