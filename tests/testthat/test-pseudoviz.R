@@ -37,7 +37,10 @@ test_that("Viz recommender", {
   package <- "hgchmagic"
   
   package_vizfun_family(package, data = x)
+  package_vizfun_family(package, hdtable_type = "Cat-Num")
+  
   package_vizfun(package, data = x)
+  package_vizfun(package, hdtable_type = "Cat-Num")
   package_vizfun(package, data = x, with_package = TRUE)
   
 
