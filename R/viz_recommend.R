@@ -33,7 +33,7 @@ viz_recommend <- function(d = NULL, dic = NULL, package = "ggmagic"){
           #r <- xx[[1]]
           t <- tibble::enframe(unlist(r))
           id <- t |> dplyr::filter(grepl("id_V", name)) |> dplyr::pull(value)
-          hdtype <- t |> dplyr::filter(grepl("hdType_V", name)) |> pull(value)
+          hdtype <- t |> dplyr::filter(grepl("hdType_V", name)) |> dplyr::pull(value)
           tibble::tibble(id = id, hdtype = hdtype) |> 
             dplyr::arrange(hdtype) |> 
             dplyr::filter(!is.na(hdtype)) |> 
