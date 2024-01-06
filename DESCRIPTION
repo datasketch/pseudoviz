@@ -21,7 +21,13 @@ Suggests:
     testthat (>= 2.1.0),
     knitr,
     rmarkdown,
-    hgchmagic
+    hgchmagic,
+    ggmagic,
+    hdtable
+Remotes:
+    datasketch/ggmagic,
+    datasketch/hgchmagic,
+    datasketch/hdtable
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

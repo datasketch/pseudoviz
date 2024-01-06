@@ -34,5 +34,52 @@ pseudoviz_hdtable_type <- pseudoviz |>
 #   select(-frtype_list)
 
 
+####
+
+# Get package functions
+packages <- c("ggmagic", "hgchmagic")
+
+require(ggmagic)
+require(hgchmagic)
+prefixes <- list(ggmagic = "gg_", hgchmagic = "hgch_")
+
+vizfuns <- purrr::map(packages, 
+                      ~ tibble::tibble(vizfun = ls(paste0("package:", .), 
+                                                   pattern = prefixes[[.]])))
+names(vizfuns) <- packages
+
+has_any_hdtype <- function(hdtable_types){
+  basic_hdtypes <- c("Cat", "Dat", "Num", "Yea")
+  #hdtable_types <- c("CatDat", "ca_te")
+  #hdtable_types <- "CatYea"
+  #hdtable_types <- "color"
+  purrr::map_lgl(hdtable_types, function(hdtable_type){
+    any(purrr::map_lgl(basic_hdtypes, ~ any(grepl(., hdtable_type))))
+  })
+}
+
+format_hdtable_type <- function(x){
+  # split every three
+  x <- gsub("(.{3})", "\\1 ", x)
+  x <- gsub(" $","", x)
+  gsub(" ","-", x)
+}
+
+
+df <- dplyr::bind_rows(vizfuns, .id = "package") |> 
+  dplyr::mutate(vizfun_family = extract_between_underscore(vizfun)) |> 
+  dplyr::filter(!is.na(vizfun)) |> 
+  dplyr::mutate(hdtable_type = stringr::word(vizfun, -1, sep = "_")) |> 
+  dplyr::mutate(is_hdtype = has_any_hdtype(hdtable_type)) |> 
+  dplyr::mutate(hdtable_type = format_hdtable_type(hdtable_type)) |> 
+  dplyr::filter(is_hdtype) |> 
+  dplyr::select(-is_hdtype)
+package_vizfuns <- df
+  
+
+
+#### SAVE
+
 usethis::use_data(pseudoviz_hdtable_type, pseudoviz_info, 
+                  package_vizfuns,
                   overwrite = TRUE, internal = TRUE)

@@ -74,10 +74,12 @@ combine_vars <- function(dic, hdtable_types = NULL){
 
 
 make_combinations <- function(v, m = 1, colname = NULL){
+  # v <- "first"
   combs <- combn(1:length(v),m)
   idx <- as.vector(combs)
   idx <- purrr::map_chr(idx, ~ v[.])
   x <- t(matrix(idx, nrow = m))
+  colnames(x) <- paste0("V", 1:ncol(x))
   x |>
     #tibble::as_tibble(.name_repair = "minimal") |>
     tibble::as_tibble() |>

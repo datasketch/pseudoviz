@@ -19,15 +19,6 @@ extract_between_underscore <- function (s){
 }
 
 
-format_hdtable_type <- function(x){
-  # extract last word
-  x <- stringr::word(x,-1, sep = "_")
-  # split every three
-  x <- gsub("(.{3})", "\\1 ", x)
-  x <- gsub(" $","", x)
-  gsub(" ","-", x)
-}
-
 file_path_sans_ext <- function (x)
 {
   sub("([^.]+)\\.[[:alnum:]]+$", "\\1", x)

@@ -1,6 +1,4 @@
-context("pseudoviz meta data")
-
-test_that("All viz in meta have an image", {
+test_that("Pseudoviz meta data", {
   # ids <- availablePseudoviz()
   # 
   # 

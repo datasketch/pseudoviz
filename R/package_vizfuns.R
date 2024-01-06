@@ -37,22 +37,7 @@ available_package_vizfuns <- function(package = NULL,
                                       data = NULL, hdtable_type = NULL,
                                       family = NULL){
   
-  # Get package functions
-  packages <- c("ggmagic", "hgchmagic")
-  require(ggmagic)
-  require(hgchmagic)
-  prefixes <- list(ggmagic = "gg_", hgchmagic = "hgch_")
-  
-  vizfuns <- purrr::map(packages, 
-                        ~ tibble::tibble(vizfun = ls(paste0("package:", .), 
-                                      pattern = prefixes[[.]])))
-  names(vizfuns) <- packages
-  
-  df <- dplyr::bind_rows(vizfuns, .id = "package") |> 
-    dplyr::mutate(vizfun_family = extract_between_underscore(vizfun)) |> 
-    dplyr::filter(!is.na(vizfun)) %>% 
-    dplyr::mutate(hdtable_type = format_hdtable_type(vizfun)) 
-  
+  df <- pseudoviz:::package_vizfuns
   
   # Filter values
   
