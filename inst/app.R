@@ -9,7 +9,7 @@ ui <- fluidPage(
 server <- function(session, input, output) {
   
   output$test <- renderPrint({
-    viz_recommend(d = iris, package = "hgchmagic")
+    viz_recommend(d = iris, package = "hgmagic")
   })
   
 }

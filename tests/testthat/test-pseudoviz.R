@@ -1,9 +1,9 @@
 
 test_that("vizfuns from packages", {
   
-  package <- "hgchmagic"
+  package <- "hgmagic"
   df <- available_package_vizfuns(package)
-  expect_true(all(grepl("^hgch_", df$vizfun)))
+  expect_true(all(grepl("^hg_", df$vizfun)))
   expect_equal(unique(df$package), package)
   
   package <- "ggmagic"
@@ -34,7 +34,7 @@ test_that("Viz recommender", {
   
   
   ## Match families and params with package funs
-  package <- "hgchmagic"
+  package <- "hgmagic"
   
   package_vizfun_family(package, data = x)
   package_vizfun_family(package, hdtable_type = "Cat-Num")
@@ -48,26 +48,26 @@ test_that("Viz recommender", {
   families_bar_donut <- available_package_vizfuns(data = x, family = c("bar", "donut")) 
   expect_true(all(c("bar", "donut") %in% unique(families_bar_donut$vizfun_family)))
   
-  package <- "hgchmagic"
+  package <- "hgmagic"
   package_vizfun(data = x, package = package)
   vw <- package_vizfun(data = x, package = package, family = c("pie","bar"))
-  expect_equal(vw, c("hgch_bar_CatNum","hgch_pie_CatNum"))
+  expect_equal(vw, c("hg_bar_CatNum","hg_pie_CatNum"))
   
   
   # Viz recommender funs
   
-  package_vizfun(package = "hgchmagic")
+  package_vizfun(package = "hgmagic")
   
-  funs <- package_vizfun(package = "hgchmagic", family = "pie", 
+  funs <- package_vizfun(package = "hgmagic", family = "pie", 
                          hdtable_type = "Cat")
-  expect_equal(funs, "hgch_pie_Cat")
-  funs <- package_vizfun(package = "hgchmagic", family = "pie", hdtable_type = "Cat-Num")
-  expect_equal(funs, "hgch_pie_CatNum")
-  funs <- package_vizfun(package = "hgchmagic", family = "pie", 
+  expect_equal(funs, "hg_pie_Cat")
+  funs <- package_vizfun(package = "hgmagic", family = "pie", hdtable_type = "Cat-Num")
+  expect_equal(funs, "hg_pie_CatNum")
+  funs <- package_vizfun(package = "hgmagic", family = "pie", 
                   hdtable_type = "Cat", with_package = TRUE)
-  expect_equal(funs, "hgchmagic::hgch_pie_Cat")
+  expect_equal(funs, "hgmagic::hg_pie_Cat")
   
-  funs <- package_vizfun(package = "hgchmagic", family = "xxx", with_package = T)
+  funs <- package_vizfun(package = "hgmagic", family = "xxx", with_package = T)
   expect_null(funs)
   
   
