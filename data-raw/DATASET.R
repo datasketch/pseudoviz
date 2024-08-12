@@ -37,12 +37,13 @@ pseudoviz_hdtable_type <- pseudoviz |>
 ####
 
 # Get package functions
-packages <- c("ggmagic", "hcmagic")
-
+#packages <- c("ggmagic", "hcmagic")
+packages <- c("hgwordcloud", "hgmagic")
 require(ggmagic)
-require(hcmagic)
-prefixes <- list(ggmagic = "gg_", hcmagic = "hg_")
-
+require(hgmagic)
+require(hgwordcloud)
+#prefixes <- list(ggmagic = "gg_", hcmagic = "hg_")
+prefixes <- list(hgwordcloud = "hg_", hgmagic = "hg_")
 vizfuns <- purrr::map(packages, 
                       ~ tibble::tibble(vizfun = ls(paste0("package:", .), 
                                                    pattern = prefixes[[.]])))
@@ -78,24 +79,24 @@ package_vizfuns <- df
 
 
 # save func availables in hgmagic
-library(hgmagic)
-function_hg <- setdiff(
-  grep("^[^_]*_[^_]*_[^_]*$", ls("package:hgmagic"), value = T),
-  c("hc_add_legend", "hc_add_options", "hc_add_tooltip", "hc_data_series" )
-)
-
-hg_df <- tibble(
-  package = rep("hgmagic", length(function_hg)), 
-  vizfun = function_hg,
-  vizfun_family = sub("^.*?_(.*?)_.*$", "\\1", function_hg), 
-  hdtable_type = sub("^-", "",
-                     gsub("([A-Z])", "-\\1", 
-                          sub("^.*?_.*?_(.*)$", "\\1", function_hg)
-                     )
-  )
-)
-
-package_vizfuns <- package_vizfuns |> bind_rows(hg_df)
+# library(hgmagic)
+# function_hg <- setdiff(
+#   grep("^[^_]*_[^_]*_[^_]*$", ls("package:hgmagic"), value = T),
+#   c("hc_add_legend", "hc_add_options", "hc_add_tooltip", "hc_data_series" )
+# )
+# 
+# hg_df <- tibble(
+#   package = rep("hgmagic", length(function_hg)), 
+#   vizfun = function_hg,
+#   vizfun_family = sub("^.*?_(.*?)_.*$", "\\1", function_hg), 
+#   hdtable_type = sub("^-", "",
+#                      gsub("([A-Z])", "-\\1", 
+#                           sub("^.*?_.*?_(.*)$", "\\1", function_hg)
+#                      )
+#   )
+# )
+# 
+# package_vizfuns <- package_vizfuns |> bind_rows(hg_df)
 
 #### SAVE
 
