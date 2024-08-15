@@ -1,7 +1,9 @@
 
 # Función principal para generar las recomendaciones
+#' @export
 recommend_visualizations <- function(dic) {
-  config <- yaml::read_yaml("inst/conf/plot-conf.yml")
+  config_path <- system.file("conf", "plot-conf.yml", package = "pseudoviz")
+  config <- yaml::read_yaml(config_path)
   
   available_viz <- map(config$rules, function(viz_rules) {
     rule <- keep(viz_rules, ~ validate_viz_conditions(dic, .x$conditions)) |> 
@@ -10,13 +12,16 @@ recommend_visualizations <- function(dic) {
     generate_viz_structure(dic, rule)
   })
   
-  available_viz <- compact(available_viz)
+  available_viz <- list(available_viz = compact(available_viz))
   available_viz
 
 }
 
 # Validar que el diccionario cumple con las condiciones para el gráfico
 validate_viz_conditions <- function(dic, conditions) {
+  
+  dic$hdtype[grepl("^id_|id", dic$id)] <- "Uid"
+  
   cat_vars <- nrow(dic[dic$hdtype == "Cat", ])
   num_vars <- nrow(dic[dic$hdtype == "Num", ])
   dat_vars <- nrow(dic[dic$hdtype == "Dat", ])
@@ -36,6 +41,7 @@ validate_viz_conditions <- function(dic, conditions) {
 # Generar la estructura para un tipo de visualización específica
 generate_viz_structure <- function(dic, rule) {
   # Filtrar las variables según los tipos especificados en las reglas
+  dic$hdtype[grepl("^id_|id", dic$id)] <- "Uid"
   cat_vars <- dic[dic$hdtype == "Cat" & dic$num_categories <= rule$max_categories, ]
   num_vars <- dic[dic$hdtype == "Num", ]
   dat_vars <- dic[dic$hdtype == "Dat", ]
@@ -106,23 +112,21 @@ select_default_vars <- function(cat_vars, num_vars, dat_vars, rule) {
     num_num_fixed_needed <- sum(rule$`default-var-fixed` == "Num") - length(default_num_vars)
     num_dat_fixed_needed <- sum(rule$`default-var-fixed` == "Dat") - length(default_dat_vars)
     
+    fixed_cat_vars <- NULL
+    fixed_num_vars <- NULL
+    fixed_dat_vars <- NULL
+    
     fixed_cat_vars <- if (num_cat_fixed_needed > 0 && nrow(cat_vars) > length(default_cat_vars)) {
       cat_vars$id[(length(default_cat_vars) + 1):min(length(default_cat_vars) + num_cat_fixed_needed, nrow(cat_vars))]
-    } else {
-      return()
-    }
+    } 
     
     fixed_num_vars <- if (num_num_fixed_needed > 0 && nrow(num_vars) > length(default_num_vars)) {
       num_vars$id[(length(default_num_vars) + 1):min(length(default_num_vars) + num_num_fixed_needed, nrow(num_vars))]
-    } else {
-      return()
-    }
+    } 
     
     fixed_dat_vars <- if (num_dat_fixed_needed > 0 && nrow(dat_vars) > length(default_dat_vars)) {
       dat_vars$id[(length(default_dat_vars) + 1):min(length(default_dat_vars) + num_dat_fixed_needed, nrow(dat_vars))]
-    } else {
-      return()
-    }
+    } 
     
     
     default_vars <- c(default_vars, fixed_cat_vars, fixed_num_vars, fixed_dat_vars)

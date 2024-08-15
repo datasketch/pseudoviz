@@ -11,7 +11,7 @@ test_that("multiplication works", {
     num_categories = c(15, 3, 3, 2, NA, NA, NA, NA)
   )
   
-  recommend_visualizations(my_dic)
-  
+  conf <- recommend_visualizations(my_dic)
+  selector_choices_var(conf, "bar")
   
 })
