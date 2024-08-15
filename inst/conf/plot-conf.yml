@@ -1,0 +1,99 @@
+rules:
+  bar:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 15
+      conditions:
+        - min-cat: 1
+        - min-cat: 1
+          min-num: 1
+        - min-cat: 2
+          min-num: 1
+        - min-cat: 1
+          min-num: 2
+
+  bar_negative_stack:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Cat", "Num"]
+      default-var-fixed: ["Cat", "Cat"]
+      max_categories: 20
+      conditions:
+        - min-cat: 2
+        - min-cat: 2
+          min-num: 1
+          
+  treemap:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 15
+      conditions:
+        - min-cat: 1
+        - min-cat: 1
+          min-num: 1
+        - min-cat: 2
+          min-num: 1
+        - min-cat: 1
+          min-num: 2
+
+  pie:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 8
+      conditions:
+        - min-cat: 1
+        - min-cat: 1
+          min-num: 1
+          
+  donut:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 8
+      conditions:
+        - min-cat: 1
+        - min-cat: 1
+          min-num: 1
+          
+  scatter:
+    - max-var: 4
+      default-var-posibilities: ["Num", "Num"]
+      default-var-fixed: ["Num", "Num"]
+      max_categories: 8
+      conditions:
+        - min-num: 2
+        - min-num: 3
+        - min-cat: 1
+          min-num: 2
+        - min-cat: 1
+          min-num: 3
+        
+  line:
+    - max-var: 3
+      default-var-posibilities: ["Dat", "Num"]
+      default-var-fixed: ["Dat"]
+      max_categories: 8
+      conditions:
+        - min-dat: 1
+        - min-dat: 1
+          min-cat: 1
+        - min-dat: 1
+          min-cat: 1
+          min-num: 1
+        - min-dat: 1
+          min-num: 1
+        - min-dat: 1
+          min-num: 2
+
+# sunburst[cat-cat], 
+# bar_grid[cat-cat, cat-cat-cat],
+# bar_icons [cat-img-num],
+# dumbbell[cat-num-num],
+# item[cat, cat-num], 
+# parallel_coordinates, 
+# radial_bar [cat, cat-cat, cat-cat-num, ]
+# sankey[cat-cat, cat-cat-cat],, 
+# solidgauge, 
+# dots [cat-cat-num]
