@@ -23,5 +23,12 @@ selector_choices_var <- function(conf, viz) {
     )
     choices[["date"]] <- dat_choices
   }
+  if (!is.null(data_list[["txt-var"]])) {
+    cat_choices <- setNames(
+      sapply(data_list[["txt-var"]], function(x) x$id),
+      sapply(data_list[["txt-var"]], function(x) x$label)
+    )
+    choices[["categories"]] <- cat_choices
+  }
   choices
 }
