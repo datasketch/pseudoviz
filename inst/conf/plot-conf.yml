@@ -3,97 +3,167 @@ rules:
     - max-var: 3
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 15
+      max_categories: 30
+      strict_conditon: ["Cat"]
       conditions:
-        - min-cat: 1
-        - min-cat: 1
-          min-num: 1
-        - min-cat: 2
-          min-num: 1
-        - min-cat: 1
-          min-num: 2
+        - max-cat: 2
+        - max-num: 2
+
+  bubbles:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 50
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 2
+        - max-num: 1
 
   bar_negative_stack:
     - max-var: 3
       default-var-posibilities: ["Cat", "Cat", "Num"]
       default-var-fixed: ["Cat", "Cat"]
       max_categories: 20
+      strict_conditon: ["Cat", "Cat"]
       conditions:
-        - min-cat: 2
-        - min-cat: 2
-          min-num: 1
+        - max-num: 1
+        - max-cat: 2
           
   treemap:
     - max-var: 3
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 15
+      strict_conditon: ["Cat"]
+      max_categories: 25
       conditions:
-        - min-cat: 1
-        - min-cat: 1
-          min-num: 1
-        - min-cat: 2
-          min-num: 1
-        - min-cat: 1
-          min-num: 2
+        - max-cat: 2
+        - max-num: 2
 
   pie:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
       max_categories: 8
+      strict_conditon: ["Cat"]
       conditions:
-        - min-cat: 1
-        - min-cat: 1
-          min-num: 1
+        - max-cat: 1
+        - max-num: 1
           
   donut:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
       max_categories: 8
+      strict_conditon: ["Cat"]
       conditions:
-        - min-cat: 1
-        - min-cat: 1
-          min-num: 1
-          
+        - max-cat: 1
+        - max-num: 1
+
   scatter:
     - max-var: 4
       default-var-posibilities: ["Num", "Num"]
       default-var-fixed: ["Num", "Num"]
-      max_categories: 8
+      #max_categories: 8
+      strict_conditon: ["Num", "Num"]
       conditions:
-        - min-num: 2
-        - min-num: 3
-        - min-cat: 1
-          min-num: 2
-        - min-cat: 1
-          min-num: 3
-        
+        - max-cat: 1
+        - max-num: 3
+
   line:
     - max-var: 3
       default-var-posibilities: ["Dat", "Num"]
       default-var-fixed: ["Dat"]
-      max_categories: 8
+      max_categories: 3000
+      #strict_conditon: ["Dat"]
       conditions:
-        - min-dat: 1
-        - min-dat: 1
-          min-cat: 1
-        - min-dat: 1
-          min-cat: 1
-          min-num: 1
-        - min-dat: 1
-          min-num: 1
-        - min-dat: 1
-          min-num: 2
+        - max-dat: 1
+        - max-cat: 1
+        - max-num: 2
+# # para que tenga sentido un grafico de sunburst debe existir una estructura jerarquica
+  sunburst:
+    - max-var: 4
+      default-var-posibilities: ["Cat", "Cat", "Num"]
+      default-var-fixed: ["Cat", "Cat"]
+      max_categories: 300
+      strict_conditon: ["Cat", "Cat"]
+      conditions:
+        - max-cat: 3
+        - max-num: 1
+ 
+  dumbbell:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num", "Num"]
+      default-var-fixed: ["Cat", "Num", "Num"]
+      strict_conditon: ["Cat", "Num", "Num"]
+      max_categories: 50
+      conditions:
+        - max-cat: 1
+        - max-num: 2
 
-# sunburst[cat-cat], 
+  item:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 15
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+
+  sankey:
+    - max-var: 4
+      default-var-posibilities: ["Cat", "Cat", "Num"]
+      default-var-fixed: ["Cat", "Cat"]
+      max_categories: 30
+      strict_conditon: ["Cat", "Cat"]
+      conditions:
+        - max-cat: 3
+        - max-num: 1
+
+  radial_bar:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 10
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 2
+        - max-num: 1
+
+  dots:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Cat", "Num"]
+      default-var-fixed: ["Cat", "Cat", "Num"]
+      max_categories: 30
+      strict_conditon: ["Cat", "Cat", "Num"]
+      conditions:
+        - max-cat: 2
+        - max-num: 1
+
+  parallel_coordinates:
+    - max-var: 7
+      default-var-posibilities: ["Cat", "Cat", "Cat", "Cat", "Cat", "Cat", "Cat"]
+      default-var-fixed: ["Cat", "Cat", "Cat", "Cat", "Cat", "Cat", "Cat"]
+      max_categories: 15
+      strict_conditon: ["Cat", "Cat", "Cat", "Cat", "Cat", "Cat", "Cat"]
+      conditions:
+        - max-cat: 7
+
+  word_cloud:
+    - max-var: 2
+      default-var-posibilities: ["Txt", "Num"]
+      default-var-fixed: ["Txt"]
+      strict_conditon: ["Txt"]
+      conditions:
+        - max-txt: 1
+        - max-num: 1
+  
 # bar_grid[cat-cat, cat-cat-cat],
 # bar_icons [cat-img-num],
-# dumbbell[cat-num-num],
-# item[cat, cat-num], 
+
+
 # parallel_coordinates, 
-# radial_bar [cat, cat-cat, cat-cat-num, ]
-# sankey[cat-cat, cat-cat-cat],, 
+
+
 # solidgauge, 
 # dots [cat-cat-num]
