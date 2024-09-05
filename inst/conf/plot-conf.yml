@@ -148,6 +148,15 @@ rules:
       strict_conditon: ["Cat", "Cat", "Cat", "Cat", "Cat", "Cat", "Cat"]
       conditions:
         - max-cat: 7
+        
+  network:
+    - max-var: 5
+      default-var-posibilities: ["Cat", "Cat", "Cat"]
+      default-var-fixed: ["Cat", "Cat"]
+      max_categories: 500
+      strict_conditon: ["Cat", "Cat"]
+      conditions:
+        - max-cat: 5
 
   word_cloud:
     - max-var: 2
@@ -157,7 +166,39 @@ rules:
       conditions:
         - max-txt: 1
         - max-num: 1
-  
+        
+  map_col_departments:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 32
+      strict_conditon: ["Cat"]
+      possible_names: ["depto", "deptos", "id_depto", "departamentos", "nombre"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1  
+        
+  map_world_countries:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 300
+      strict_conditon: ["Cat"]
+      possible_names: ["country", "pais", "id_country", "id_pais", "iso"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+        
+  map_world_countries_latin_america:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 45
+      strict_conditon: ["Cat"]
+      possible_names: ["country", "pais", "id_country", "id_pais", "iso"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1        
 # bar_grid[cat-cat, cat-cat-cat],
 # bar_icons [cat-img-num],
 

@@ -77,6 +77,12 @@ generate_viz_structure <- function(dic, rule) {
     cat_vars <- dic[dic$hdtype == "Cat", ]
   }
   
+  if (!is.null(rule$possible_names)) {
+    if (nrow(dic) > 0) {
+    cat_vars <- dic[dic$id %in% rule$possible_names,]
+    }
+  }
+  
   num_vars <- dic[dic$hdtype == "Num", ]
   txt_vars <- dic[dic$hdtype == "Txt", ]
   dat_vars <- dic[dic$hdtype %in% c("Dat", "Yea"), ]
