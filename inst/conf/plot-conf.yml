@@ -150,13 +150,13 @@ rules:
         - max-cat: 7
         
   network:
-    - max-var: 5
-      default-var-posibilities: ["Cat", "Cat", "Cat"]
+    - max-var: 7
+      default-var-posibilities: ["Cat", "Cat", "Cat", "Cat"]
       default-var-fixed: ["Cat", "Cat"]
       max_categories: 500
       strict_conditon: ["Cat", "Cat"]
       conditions:
-        - max-cat: 5
+        - max-cat: 7
 
   word_cloud:
     - max-var: 2
