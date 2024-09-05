@@ -28,12 +28,19 @@ validate_viz_conditions <- function(dic, rule) {
   
   dic$hdtype[grepl("^id_|id|url", dic$id)] <- "Uid"
   
-
+  if (!is.null(rule$possible_names)) {
+    if (nrow(dic) > 0) {
+      dic <- dic[dic$id %in% rule$possible_names,]
+    }
+  }
+  
   cat_vars <- if (!is.null(rule$max_categories)) {
     nrow(dic[dic$hdtype %in% c("Cat", "Yea") & dic$num_categories <= rule$max_categories, ])
   } else {
     nrow(dic[dic$hdtype == "Cat", ])
   }
+  
+
   
   txt_vars <- nrow(dic[dic$hdtype == "Txt", ])
   num_vars <- nrow(dic[dic$hdtype == "Num", ])
