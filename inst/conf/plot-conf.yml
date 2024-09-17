@@ -63,7 +63,7 @@ rules:
     - max-var: 4
       default-var-posibilities: ["Num", "Num"]
       default-var-fixed: ["Num", "Num"]
-      #max_categories: 8
+      max_categories: 15
       strict_conditon: ["Num", "Num"]
       conditions:
         - max-cat: 1
@@ -84,7 +84,7 @@ rules:
     - max-var: 4
       default-var-posibilities: ["Cat", "Cat", "Num"]
       default-var-fixed: ["Cat", "Cat"]
-      max_categories: 300
+      max_categories: 50
       strict_conditon: ["Cat", "Cat"]
       conditions:
         - max-cat: 3
@@ -141,13 +141,13 @@ rules:
         - max-num: 1
 
   parallel_coordinates:
-    - max-var: 7
-      default-var-posibilities: ["Cat", "Cat", "Cat", "Cat", "Cat", "Cat", "Cat"]
-      default-var-fixed: ["Cat", "Cat", "Cat", "Cat", "Cat", "Cat", "Cat"]
-      max_categories: 15
-      strict_conditon: ["Cat", "Cat", "Cat", "Cat", "Cat", "Cat", "Cat"]
+    - max-var: 10
+      default-var-posibilities: ["Cat", "Cat", "Cat", "Cat"]
+      default-var-fixed: ["Cat", "Cat"]
+      max_categories: 50
+      strict_conditon: ["Cat", "Cat"]
       conditions:
-        - max-cat: 7
+        - max-cat: 10
         
   network:
     - max-var: 7
@@ -184,7 +184,7 @@ rules:
       default-var-fixed: ["Cat"]
       max_categories: 300
       strict_conditon: ["Cat"]
-      possible_names: ["country", "pais", "id_country", "id_pais", "iso"]
+      possible_names: ["country", "countries", "pais", "id_country", "id_pais", "iso"]
       conditions:
         - max-cat: 1
         - max-num: 1
