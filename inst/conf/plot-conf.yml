@@ -71,7 +71,7 @@ rules:
 
   line:
     - max-var: 3
-      default-var-posibilities: ["Dat", "Num"]
+      default-var-posibilities: ["Dat", "Cat", "Num"]
       default-var-fixed: ["Dat"]
       max_categories: 3000
       #strict_conditon: ["Dat"]
@@ -198,7 +198,42 @@ rules:
       possible_names: ["country", "pais", "id_country", "id_pais", "iso"]
       conditions:
         - max-cat: 1
-        - max-num: 1        
+        - max-num: 1 
+        
+  map_esp_communities:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 45
+      strict_conditon: ["Cat"]
+      possible_names: ["communities", "comunidades", "comunidad", "ciudades"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1 
+        
+  map_esp_provinces:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 45
+      strict_conditon: ["Cat"]
+      possible_names: ["province", "provincia"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+        
+  esp_municipalities:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      max_categories: 45
+      strict_conditon: ["Cat"]
+      possible_names: ["municipalities", "municipios"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+        
+
 # bar_grid[cat-cat, cat-cat-cat],
 # bar_icons [cat-img-num],
 

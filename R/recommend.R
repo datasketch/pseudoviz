@@ -26,7 +26,7 @@ recommend_visualizations <- function(dic) {
 # Validar que el diccionario cumple con las condiciones para el gráfico
 validate_viz_conditions <- function(dic, rule) {
   
-  dic$hdtype[grepl("^id_|id|url", dic$id)] <- "Uid"
+  dic$Hdt[grepl("^*id_|^*id|^*url", dic$id)] <- "Uid"
   
   if (!is.null(rule$possible_names)) {
     if (nrow(dic) > 0) {
@@ -34,17 +34,11 @@ validate_viz_conditions <- function(dic, rule) {
     }
   }
   
-  cat_vars <- if (!is.null(rule$max_categories)) {
-    nrow(dic[dic$hdtype %in% c("Cat", "Yea") & dic$num_categories <= rule$max_categories, ])
-  } else {
-    nrow(dic[dic$hdtype == "Cat", ])
-  }
-  
+  cat_vars <- nrow(dic[dic$Hdt == "Cat", ])
 
-  
-  txt_vars <- nrow(dic[dic$hdtype == "Txt", ])
-  num_vars <- nrow(dic[dic$hdtype == "Num", ])
-  dat_vars <- nrow(dic[dic$hdtype %in% c("Dat", "Yea"), ])
+  txt_vars <- nrow(dic[dic$Hdt == "Txt", ])
+  num_vars <- nrow(dic[dic$Hdt == "Num", ])
+  dat_vars <- nrow(dic[dic$Hdt %in% c("Dat", "Yea"), ])
   
 
   if (!is.null(rule$`strict_conditon`)) {
@@ -76,12 +70,13 @@ validate_viz_conditions <- function(dic, rule) {
 
 # Generar la estructura para un tipo de visualización específica
 generate_viz_structure <- function(dic, rule) {
-  dic$hdtype[grepl("^id_|id", dic$id)] <- "Uid"
+  dic$Hdt[grepl("^id_|^id", dic$id)] <- "Uid"
+  dic$Hdt[grepl("^anio|^ano|^year", dic$id)] <- "Yea"
   
   if (!is.null(rule$max_categories)) {
-    cat_vars <- dic[dic$hdtype %in% c("Cat", "Yea") & dic$num_categories <= rule$max_categories, ]
+    cat_vars <- dic[dic$Hdt %in% c("Cat", "Yea"), ]
   } else {
-    cat_vars <- dic[dic$hdtype == "Cat", ]
+    cat_vars <- dic[dic$Hdt == "Cat", ]
   }
   
   if (!is.null(rule$possible_names)) {
@@ -90,9 +85,9 @@ generate_viz_structure <- function(dic, rule) {
     }
   }
   
-  num_vars <- dic[dic$hdtype == "Num", ]
-  txt_vars <- dic[dic$hdtype == "Txt", ]
-  dat_vars <- dic[dic$hdtype %in% c("Dat", "Yea"), ]
+  num_vars <- dic[dic$Hdt == "Num", ]
+  txt_vars <- dic[dic$Hdt == "Txt", ]
+  dat_vars <- dic[dic$Hdt %in% c("Dat", "Yea"), ]
   
   default_vars <- select_default_vars(cat_vars, num_vars, dat_vars, txt_vars, rule)
   
@@ -159,11 +154,6 @@ generate_viz_structure <- function(dic, rule) {
 
 # Seleccionar las variables por defecto según las reglas
 select_default_vars <- function(cat_vars, num_vars, dat_vars, txt_vars, rule) {
-  
-
-  if (!is.null(rule$max_categories)) {
-    cat_vars <- cat_vars[cat_vars$num_categories <= rule$max_categories, ]
-  }
   
   num_cat_needed <- sum(rule$`default-var-posibilities` %in% c("Cat", "Yea"))
   num_num_needed <- sum(rule$`default-var-posibilities` == "Num")
