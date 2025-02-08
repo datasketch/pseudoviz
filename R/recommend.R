@@ -71,13 +71,11 @@ validate_viz_conditions <- function(dic, rule) {
 # Generar la estructura para un tipo de visualización específica
 generate_viz_structure <- function(dic, rule) {
   dic$Hdt[grepl("^id_|^id", dic$id)] <- "Uid"
-  dic$Hdt[grepl("^anio|^ano|^year", dic$id)] <- "Yea"
+  dic$Hdt[grepl("^anio|^ano|^year", dic$id)] <- "Cat"
   
-  if (!is.null(rule$max_categories)) {
-    cat_vars <- dic[dic$Hdt %in% c("Cat", "Yea"), ]
-  } else {
-    cat_vars <- dic[dic$Hdt == "Cat", ]
-  }
+
+  cat_vars <- dic[dic$Hdt == "Cat", ]
+
   
   if (!is.null(rule$possible_names)) {
     if (nrow(dic) > 0) {
@@ -87,7 +85,7 @@ generate_viz_structure <- function(dic, rule) {
   
   num_vars <- dic[dic$Hdt == "Num", ]
   txt_vars <- dic[dic$Hdt == "Txt", ]
-  dat_vars <- dic[dic$Hdt %in% c("Dat", "Yea"), ]
+  dat_vars <- dic[dic$Hdt %in% c("Dat", "Cat"), ]
   
   default_vars <- select_default_vars(cat_vars, num_vars, dat_vars, txt_vars, rule)
   

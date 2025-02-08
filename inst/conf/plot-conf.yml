@@ -200,38 +200,40 @@ rules:
         - max-cat: 1
         - max-num: 1 
         
-  map_esp_communities:
+  map_spain:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
       max_categories: 45
       strict_conditon: ["Cat"]
-      possible_names: ["communities", "comunidades", "comunidad", "ciudades"]
+      possible_names: ["communities", "comunidades", "comunidad", "ciudades","province", "provincia"]
       conditions:
         - max-cat: 1
         - max-num: 1 
         
-  map_esp_provinces:
+  map_world_countries_european_union:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
       max_categories: 45
       strict_conditon: ["Cat"]
-      possible_names: ["province", "provincia"]
+      possible_names: ["countries", "pais", "id_country", "id_pais", "iso"]
       conditions:
         - max-cat: 1
         - max-num: 1
         
-  esp_municipalities:
+  map_world_countries_europe:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
       max_categories: 45
       strict_conditon: ["Cat"]
-      possible_names: ["municipalities", "municipios"]
+      possible_names: ["countries", "pais", "pais", "id_country", "id_pais", "iso"]
       conditions:
         - max-cat: 1
         - max-num: 1
+        
+  
         
 
 # bar_grid[cat-cat, cat-cat-cat],
