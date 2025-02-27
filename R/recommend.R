@@ -34,11 +34,11 @@ validate_viz_conditions <- function(dic, rule) {
     }
   }
   
-  cat_vars <- nrow(dic[dic$Hdt == "Cat", ])
+  cat_vars <- nrow(dic[dic$hdt == "Cat", ])
 
-  txt_vars <- nrow(dic[dic$Hdt == "Txt", ])
-  num_vars <- nrow(dic[dic$Hdt == "Num", ])
-  dat_vars <- nrow(dic[dic$Hdt %in% c("Dat", "Yea"), ])
+  txt_vars <- nrow(dic[dic$hdt == "Txt", ])
+  num_vars <- nrow(dic[dic$hdt == "Num", ])
+  dat_vars <- nrow(dic[dic$hdt %in% c("Dat", "Yea"), ])
   
 
   if (!is.null(rule$`strict_conditon`)) {
@@ -74,7 +74,7 @@ generate_viz_structure <- function(dic, rule) {
   dic$Hdt[grepl("^anio|^ano|^year", dic$id)] <- "Cat"
   
 
-  cat_vars <- dic[dic$Hdt == "Cat", ]
+  cat_vars <- dic[dic$hdt == "Cat", ]
 
   
   if (!is.null(rule$possible_names)) {
@@ -83,9 +83,9 @@ generate_viz_structure <- function(dic, rule) {
     }
   }
   
-  num_vars <- dic[dic$Hdt == "Num", ]
-  txt_vars <- dic[dic$Hdt == "Txt", ]
-  dat_vars <- dic[dic$Hdt %in% c("Dat", "Cat"), ]
+  num_vars <- dic[dic$hdt == "Num", ]
+  txt_vars <- dic[dic$hdt == "Txt", ]
+  dat_vars <- dic[dic$hdt %in% c("Dat", "Cat"), ]
   
   default_vars <- select_default_vars(cat_vars, num_vars, dat_vars, txt_vars, rule)
   
