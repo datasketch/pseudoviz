@@ -182,7 +182,6 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 300
       strict_conditon: ["Cat"]
       possible_names: ["country", "countries", "pais", "id_country", "id_pais", "iso"]
       conditions:
@@ -193,7 +192,6 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 45
       strict_conditon: ["Cat"]
       possible_names: ["country", "pais", "id_country", "id_pais", "iso"]
       conditions:
@@ -204,9 +202,8 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 45
       strict_conditon: ["Cat"]
-      possible_names: ["communities", "comunidades", "comunidad", "ciudades","province", "provincia"]
+      possible_names: ["country","communities", "comunidades", "comunidad", "ciudades","province", "provincia"]
       conditions:
         - max-cat: 1
         - max-num: 1 
@@ -215,9 +212,8 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 45
       strict_conditon: ["Cat"]
-      possible_names: ["countries", "pais", "id_country", "id_pais", "iso"]
+      possible_names: ["country","countries", "pais", "id_country", "id_pais", "iso"]
       conditions:
         - max-cat: 1
         - max-num: 1
@@ -226,9 +222,8 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 45
       strict_conditon: ["Cat"]
-      possible_names: ["countries", "pais", "pais", "id_country", "id_pais", "iso"]
+      possible_names: ["country", "countries", "pais", "pais", "id_country", "id_pais", "iso"]
       conditions:
         - max-cat: 1
         - max-num: 1

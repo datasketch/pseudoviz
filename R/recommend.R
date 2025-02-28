@@ -31,6 +31,7 @@ validate_viz_conditions <- function(dic, rule) {
   if (!is.null(rule$possible_names)) {
     if (nrow(dic) > 0) {
       dic <- dic[dic$id %in% rule$possible_names,]
+      dic$hdt[dic$hdt == "Txt"] <- "Cat"
     }
   }
   
