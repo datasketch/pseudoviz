@@ -26,25 +26,26 @@ recommend_visualizations <- function(dic) {
 # Validar que el diccionario cumple con las condiciones para el gráfico
 validate_viz_conditions <- function(dic, rule) {
   
-  dic$Hdt[grepl("^*id_|^*id|^*url", dic$id)] <- "Uid"
+  dic$hdt[grepl("^*id_|^*id|^*url", dic$id)] <- "Uid"
+  dic$hdt[grepl("^anio|^ano|^year", dic$id)] <- "Yea"
+  dic$hdt[grepl("^mes|^dia|^lugar", dic$id)] <- "Cat"
   
   if (!is.null(rule$possible_names)) {
     if (nrow(dic) > 0) {
       dic <- dic[dic$id %in% rule$possible_names,]
-      dic$hdt[dic$hdt == "Txt"] <- "Cat"
+      dic$hdt[dic$id %in% rule$possible_names] <- "Cat"
     }
   }
   
   cat_vars <- nrow(dic[dic$hdt == "Cat", ])
-
   txt_vars <- nrow(dic[dic$hdt == "Txt", ])
-  num_vars <- nrow(dic[dic$hdt == "Num", ])
+  num_vars <- nrow(dic[dic$hdt %in% c("Num", "Cnt", "Pct"), ])
   dat_vars <- nrow(dic[dic$hdt %in% c("Dat", "Yea"), ])
   
 
   if (!is.null(rule$`strict_conditon`)) {
     strict_cat_needed <- sum(rule$`strict_conditon` %in% c("Cat", "Yea"))
-    strict_num_needed <- sum(rule$`strict_conditon` == "Num")
+    strict_num_needed <- sum(rule$`strict_conditon` %in% c("Num", "Cnt"))
     strict_txt_needed <- sum(rule$`strict_conditon` == "Txt")
     strict_dat_needed <- sum(rule$`strict_conditon` %in% c("Dat", "Yea"))
     
@@ -71,22 +72,23 @@ validate_viz_conditions <- function(dic, rule) {
 
 # Generar la estructura para un tipo de visualización específica
 generate_viz_structure <- function(dic, rule) {
-  dic$Hdt[grepl("^id_|^id", dic$id)] <- "Uid"
-  dic$Hdt[grepl("^anio|^ano|^year", dic$id)] <- "Cat"
-  
+  dic$hdt[grepl("^id_|^id", dic$id)] <- "Uid"
+  dic$hdt[grepl("^anio|^ano|^year", dic$id)] <- "Yea"
+  dic$hdt[grepl("^mes|^dia|^lugar", dic$id)] <- "Cat"
 
-  cat_vars <- dic[dic$hdt == "Cat", ]
+  cat_vars <- dic[dic$hdt %in% c("Cat", "Yea"), ]
 
   
   if (!is.null(rule$possible_names)) {
     if (nrow(dic) > 0) {
-    cat_vars <- dic[dic$id %in% rule$possible_names,]
+      cat_vars <- dic[dic$id %in% rule$possible_names,]
+      dic$hdt[dic$id %in% rule$possible_names] <- "Cat"
     }
   }
   
-  num_vars <- dic[dic$hdt == "Num", ]
+  num_vars <- dic[dic$hdt %in% c("Num", "Cnt", "Pct"), ]
   txt_vars <- dic[dic$hdt == "Txt", ]
-  dat_vars <- dic[dic$hdt %in% c("Dat", "Cat"), ]
+  dat_vars <- dic[dic$hdt %in% c("Dat", "Cat", "Yea"), ]
   
   default_vars <- select_default_vars(cat_vars, num_vars, dat_vars, txt_vars, rule)
   
@@ -155,12 +157,12 @@ generate_viz_structure <- function(dic, rule) {
 select_default_vars <- function(cat_vars, num_vars, dat_vars, txt_vars, rule) {
   
   num_cat_needed <- sum(rule$`default-var-posibilities` %in% c("Cat", "Yea"))
-  num_num_needed <- sum(rule$`default-var-posibilities` == "Num")
+  num_num_needed <- sum(rule$`default-var-posibilities` %in% c("Num", "Cnt", "Pct"))
   num_txt_needed <- sum(rule$`default-var-posibilities` == "Txt")
   num_dat_needed <- sum(rule$`default-var-posibilities` %in% c("Dat", "Yea"))
   
   strict_cat_needed <- if (!is.null(rule$`strict_conditon`)) sum(rule$`strict_conditon` %in% c("Cat", "Yea")) else 0
-  strict_num_needed <- if (!is.null(rule$`strict_conditon`)) sum(rule$`strict_conditon` == "Num") else 0
+  strict_num_needed <- if (!is.null(rule$`strict_conditon`)) sum(rule$`strict_conditon` %in% c("Num", "Cnt", "Pct")) else 0
   strict_txt_needed <- if (!is.null(rule$`strict_conditon`)) sum(rule$`strict_conditon` == "Txt") else 0
   #strict_dat_needed <- if (!is.null(rule$`strict_conditon`)) sum(rule$`strict_conditon` %in% c("Dat", "Yea")) else 0
   

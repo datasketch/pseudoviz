@@ -3,7 +3,6 @@ rules:
     - max-var: 3
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 30
       strict_conditon: ["Cat"]
       conditions:
         - max-cat: 2
@@ -13,7 +12,6 @@ rules:
     - max-var: 3
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 50
       strict_conditon: ["Cat"]
       conditions:
         - max-cat: 2
@@ -23,7 +21,6 @@ rules:
     - max-var: 3
       default-var-posibilities: ["Cat", "Cat", "Num"]
       default-var-fixed: ["Cat", "Cat"]
-      max_categories: 20
       strict_conditon: ["Cat", "Cat"]
       conditions:
         - max-num: 1
@@ -34,7 +31,6 @@ rules:
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
       strict_conditon: ["Cat"]
-      max_categories: 25
       conditions:
         - max-cat: 2
         - max-num: 2
@@ -43,7 +39,6 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 8
       strict_conditon: ["Cat"]
       conditions:
         - max-cat: 1
@@ -53,7 +48,6 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 8
       strict_conditon: ["Cat"]
       conditions:
         - max-cat: 1
@@ -63,7 +57,6 @@ rules:
     - max-var: 4
       default-var-posibilities: ["Num", "Num"]
       default-var-fixed: ["Num", "Num"]
-      max_categories: 15
       strict_conditon: ["Num", "Num"]
       conditions:
         - max-cat: 1
@@ -73,8 +66,8 @@ rules:
     - max-var: 3
       default-var-posibilities: ["Dat", "Cat", "Num"]
       default-var-fixed: ["Dat"]
-      max_categories: 3000
       #strict_conditon: ["Dat"]
+      possible_names: ["anio", "ano", "year", "mes", "dia"]
       conditions:
         - max-dat: 1
         - max-cat: 1
@@ -84,7 +77,6 @@ rules:
     - max-var: 4
       default-var-posibilities: ["Cat", "Cat", "Num"]
       default-var-fixed: ["Cat", "Cat"]
-      max_categories: 50
       strict_conditon: ["Cat", "Cat"]
       conditions:
         - max-cat: 3
@@ -95,7 +87,6 @@ rules:
       default-var-posibilities: ["Cat", "Num", "Num"]
       default-var-fixed: ["Cat", "Num", "Num"]
       strict_conditon: ["Cat", "Num", "Num"]
-      max_categories: 50
       conditions:
         - max-cat: 1
         - max-num: 2
@@ -104,7 +95,6 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 15
       strict_conditon: ["Cat"]
       conditions:
         - max-cat: 1
@@ -114,7 +104,6 @@ rules:
     - max-var: 4
       default-var-posibilities: ["Cat", "Cat", "Num"]
       default-var-fixed: ["Cat", "Cat"]
-      max_categories: 30
       strict_conditon: ["Cat", "Cat"]
       conditions:
         - max-cat: 3
@@ -124,7 +113,6 @@ rules:
     - max-var: 3
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 10
       strict_conditon: ["Cat"]
       conditions:
         - max-cat: 2
@@ -134,7 +122,6 @@ rules:
     - max-var: 3
       default-var-posibilities: ["Cat", "Cat", "Num"]
       default-var-fixed: ["Cat", "Cat", "Num"]
-      max_categories: 30
       strict_conditon: ["Cat", "Cat", "Num"]
       conditions:
         - max-cat: 2
@@ -144,7 +131,6 @@ rules:
     - max-var: 10
       default-var-posibilities: ["Cat", "Cat", "Cat", "Cat"]
       default-var-fixed: ["Cat", "Cat"]
-      max_categories: 50
       strict_conditon: ["Cat", "Cat"]
       conditions:
         - max-cat: 10
@@ -153,7 +139,6 @@ rules:
     - max-var: 7
       default-var-posibilities: ["Cat", "Cat", "Cat", "Cat"]
       default-var-fixed: ["Cat", "Cat"]
-      max_categories: 500
       strict_conditon: ["Cat", "Cat"]
       conditions:
         - max-cat: 7
@@ -171,7 +156,6 @@ rules:
     - max-var: 2
       default-var-posibilities: ["Cat", "Num"]
       default-var-fixed: ["Cat"]
-      max_categories: 32
       strict_conditon: ["Cat"]
       possible_names: ["depto", "deptos", "id_depto", "departamentos", "nombre"]
       conditions:
