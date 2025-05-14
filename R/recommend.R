@@ -23,32 +23,37 @@ recommend_visualizations <- function(dic) {
 }
 
 
+# Función para validar condiciones de variables
+validate_conditions <- function(vars, condition) {
+  max_val <- condition$`max` %||% Inf
+  min_val <- condition$`min` %||% 0
+  vars <= max_val && vars >= min_val
+}
+
 # Validar que el diccionario cumple con las condiciones para el gráfico
 validate_viz_conditions <- function(dic, rule) {
-  
   dic$hdt[grepl("^*id_|^*id|^*url", dic$id)] <- "Uid"
   dic$hdt[grepl("^anio|^ano|^year", dic$id)] <- "Yea"
   dic$hdt[grepl("^mes|^dia|^lugar", dic$id)] <- "Cat"
-  
+
   if (!is.null(rule$possible_names)) {
     if (nrow(dic) > 0) {
       dic <- dic[dic$id %in% rule$possible_names,]
       dic$hdt[dic$id %in% rule$possible_names] <- "Cat"
     }
   }
-  
+
   cat_vars <- nrow(dic[dic$hdt == "Cat", ])
   txt_vars <- nrow(dic[dic$hdt == "Txt", ])
   num_vars <- nrow(dic[dic$hdt %in% c("Num", "Cnt", "Pct"), ])
   dat_vars <- nrow(dic[dic$hdt %in% c("Dat", "Yea"), ])
-  
 
   if (!is.null(rule$`strict_conditon`)) {
     strict_cat_needed <- sum(rule$`strict_conditon` %in% c("Cat", "Yea"))
     strict_num_needed <- sum(rule$`strict_conditon` %in% c("Num", "Cnt"))
     strict_txt_needed <- sum(rule$`strict_conditon` == "Txt")
     strict_dat_needed <- sum(rule$`strict_conditon` %in% c("Dat", "Yea"))
-    
+
     if (cat_vars < strict_cat_needed || 
         num_vars < strict_num_needed || 
         dat_vars < strict_dat_needed ||
@@ -56,14 +61,12 @@ validate_viz_conditions <- function(dic, rule) {
       return(FALSE)
     }
   }
-  
+
   valid_conditions <- map_lgl(rule$conditions, function(condition) {
-    max_cat <- condition$`max-cat` %||% Inf
-    max_num <- condition$`max-num` %||% Inf
-    max_dat <- condition$`max-dat` %||% Inf
-    max_txt <- condition$`max-txt` %||% Inf
-    
-    cat_vars <= max_cat && num_vars <= max_num && dat_vars <= max_dat && txt_vars <= max_txt
+    validate_conditions(cat_vars, condition$`cat`) &&
+    validate_conditions(num_vars, condition$`num`) &&
+    validate_conditions(dat_vars, condition$`dat`) &&
+    validate_conditions(txt_vars, condition$`txt`)
   })
   
   any(valid_conditions)

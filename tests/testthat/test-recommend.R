@@ -1,10 +1,21 @@
 test_that("multiplication works", {
+  
+  library(hdtb)
   d <- iris
   dic_hdtinfer <-  hdtinfer::hdtinfer(d) |> rename(label = id)
   d <- hdtb::hdtable(d)
   data <- d$data
   dic <- dic_hdtinfer |> bind_cols(tibble(id = names(d$data)))
   names(recommend_visualizations(dic)$available_viz)
+  
+  data <- sample_data("Cat-Yea-Num")
+  dic <-  hdtinfer::hdtinfer(data) 
+  dic$label <- dic$id
+  names(recommend_visualizations(dic)$available_viz)
+  conf <- recommend_visualizations(dic)
+  selector_choices_var(conf, "line")
+  
+  
   
   my_dic <- data.frame(
     id = c("instancia_principal", "tipo_de_sentencia", "orientacion_sexual", "intersexual", "nombre", "ano", "descripcion", "titulo"),
@@ -20,7 +31,7 @@ test_that("multiplication works", {
   dic$num_categories <- map(dic$id, ~dic$stats[[.]]$n_unique) |> unlist()
   recommend_visualizations(dic)
   
-
+  
   
   
 })
