@@ -8,28 +8,28 @@ combine_vars <- function(dic, hdtable_types = NULL){
   vars2 <- NULL
   vars3 <- NULL
   
-  hdType_V1 <- NULL
-  hdType_V2 <- NULL
-  hdType_V3 <- NULL
+  hdt_V1 <- NULL
+  hdt_V2 <- NULL
+  hdt_V3 <- NULL
   
   # 1 Var
   
   vars_1 <- make_combinations(dic$id, 1, colname = "id_")
-  hdtypes_1 <- make_combinations(dic$hdtype, 1, colname = "hdType_")
+  hdts_1 <- make_combinations(dic$hdt, 1, colname = "hdt_")
   vars1 <- vars_1 |>
-    dplyr::left_join(hdtypes_1, by = "comb_idx") |>
+    dplyr::left_join(hdts_1, by = "comb_idx") |>
     dplyr::mutate(n_vars = 1)
   # 2 Vars
   if (nrow(dic) > 1) {
     vars_2 <- make_combinations(dic$id, 2, colname = "id_")
-    hdtypes_2 <- make_combinations(dic$hdtype, 2, colname = "hdType_")
-    vars2 <- vars_2 |> dplyr::left_join(hdtypes_2, by = "comb_idx") |>
+    hdts_2 <- make_combinations(dic$hdt, 2, colname = "hdt_")
+    vars2 <- vars_2 |> dplyr::left_join(hdts_2, by = "comb_idx") |>
       dplyr::mutate(n_vars = 2)
     # 3 Vars
     if (nrow(dic) > 2) {
       vars_3 <- make_combinations(dic$id, 3, colname = "id_")
-      hdtypes_3 <- make_combinations(dic$hdtype, 3, colname = "hdType_")
-      vars3 <- vars_3 |> dplyr::left_join(hdtypes_3, by = "comb_idx") |>
+      hdts_3 <- make_combinations(dic$hdt, 3, colname = "hdt_")
+      vars3 <- vars_3 |> dplyr::left_join(hdts_3, by = "comb_idx") |>
         dplyr::mutate(n_vars = 3)
     }
   }
@@ -40,14 +40,14 @@ combine_vars <- function(dic, hdtable_types = NULL){
   if(!"id_V2" %in% names(vars)){
     vars$id_V2 <- NA
   }
-  if(!"hdType_V2" %in% names(vars)){
-    vars$hdType_V2 <- NA
+  if(!"hdt_V2" %in% names(vars)){
+    vars$hdt_V2 <- NA
   }
   if(!"id_V3" %in% names(vars)){
     vars$id_V3 <- NA
   }
-  if(!"hdType_V3" %in% names(vars)){
-    vars$hdType_V3 <- NA
+  if(!"hdt_V3" %in% names(vars)){
+    vars$hdt_V3 <- NA
   }
   
   paste_sort <- function(x, collapse = "-"){
@@ -57,7 +57,7 @@ combine_vars <- function(dic, hdtable_types = NULL){
   vars <- vars |>
     dplyr::rowwise() |> 
     dplyr::mutate(
-      hdtable_type = paste_sort(dplyr::c_across(hdType_V1:hdType_V3))) |> 
+      hdtable_type = paste_sort(dplyr::c_across(hdt_V1:hdt_V3))) |> 
     dplyr::ungroup()
   
   

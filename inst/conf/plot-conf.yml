@@ -1,0 +1,226 @@
+rules:
+  bar:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 2
+        - max-num: 2
+
+  bubbles:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 2
+        - max-num: 1
+
+  bar_negative_stack:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Cat", "Num"]
+      default-var-fixed: ["Cat", "Cat"]
+      strict_conditon: ["Cat", "Cat"]
+      conditions:
+        - max-num: 1
+        - max-cat: 2
+          
+  treemap:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 2
+        - max-num: 2
+
+  pie:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+          
+  donut:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+
+  scatter:
+    - max-var: 4
+      default-var-posibilities: ["Num", "Num"]
+      default-var-fixed: ["Num", "Num"]
+      strict_conditon: ["Num", "Num"]
+      conditions:
+        - max-cat: 1
+        - max-num: 3
+
+  line:
+    - max-var: 3
+      default-var-posibilities: ["Dat", "Cat", "Num"]
+      default-var-fixed: ["Dat"]
+      #strict_conditon: ["Dat"]
+      possible_names: ["anio", "ano", "year", "mes", "dia"]
+      conditions:
+        - max-dat: 1
+        - max-cat: 1
+        - max-num: 2
+# # para que tenga sentido un grafico de sunburst debe existir una estructura jerarquica
+  sunburst:
+    - max-var: 4
+      default-var-posibilities: ["Cat", "Cat", "Num"]
+      default-var-fixed: ["Cat", "Cat"]
+      strict_conditon: ["Cat", "Cat"]
+      conditions:
+        - max-cat: 3
+        - max-num: 1
+ 
+  dumbbell:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num", "Num"]
+      default-var-fixed: ["Cat", "Num", "Num"]
+      strict_conditon: ["Cat", "Num", "Num"]
+      conditions:
+        - max-cat: 1
+        - max-num: 2
+
+  item:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+
+  sankey:
+    - max-var: 4
+      default-var-posibilities: ["Cat", "Cat", "Num"]
+      default-var-fixed: ["Cat", "Cat"]
+      strict_conditon: ["Cat", "Cat"]
+      conditions:
+        - max-cat: 3
+        - max-num: 1
+
+  radial_bar:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      conditions:
+        - max-cat: 2
+        - max-num: 1
+
+  dots:
+    - max-var: 3
+      default-var-posibilities: ["Cat", "Cat", "Num"]
+      default-var-fixed: ["Cat", "Cat", "Num"]
+      strict_conditon: ["Cat", "Cat", "Num"]
+      conditions:
+        - max-cat: 2
+        - max-num: 1
+
+  parallel_coordinates:
+    - max-var: 10
+      default-var-posibilities: ["Cat", "Cat", "Cat", "Cat"]
+      default-var-fixed: ["Cat", "Cat"]
+      strict_conditon: ["Cat", "Cat"]
+      conditions:
+        - max-cat: 10
+        
+  network:
+    - max-var: 7
+      default-var-posibilities: ["Cat", "Cat", "Cat", "Cat"]
+      default-var-fixed: ["Cat", "Cat"]
+      strict_conditon: ["Cat", "Cat"]
+      conditions:
+        - max-cat: 7
+
+  word_cloud:
+    - max-var: 2
+      default-var-posibilities: ["Txt", "Num"]
+      default-var-fixed: ["Txt"]
+      strict_conditon: ["Txt"]
+      conditions:
+        - max-txt: 1
+        - max-num: 1
+        
+  map_col_departments:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      possible_names: ["depto", "deptos", "id_depto", "departamentos", "nombre"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1  
+        
+  map_world_countries:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      possible_names: ["country", "countries", "pais", "id_country", "id_pais", "iso"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+        
+  map_world_countries_latin_america:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      possible_names: ["country", "pais", "id_country", "id_pais", "iso"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1 
+        
+  map_spain:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      possible_names: ["country","communities", "comunidades", "comunidad", "ciudades","province", "provincia"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1 
+        
+  map_world_countries_european_union:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      possible_names: ["country","countries", "pais", "id_country", "id_pais", "iso"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+        
+  map_world_countries_europe:
+    - max-var: 2
+      default-var-posibilities: ["Cat", "Num"]
+      default-var-fixed: ["Cat"]
+      strict_conditon: ["Cat"]
+      possible_names: ["country", "countries", "pais", "pais", "id_country", "id_pais", "iso"]
+      conditions:
+        - max-cat: 1
+        - max-num: 1
+        
+  
+        
+
+# bar_grid[cat-cat, cat-cat-cat],
+# bar_icons [cat-img-num],
+
+
+# parallel_coordinates, 
+
+
+# solidgauge, 
+# dots [cat-cat-num]
